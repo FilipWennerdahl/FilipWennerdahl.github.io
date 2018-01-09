@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="Uppgift_4_Desktop.css">
+		<link rel="stylesheet" href="Uppgift_4_Mobile.css" media="(max-width: 820px)">
+		<title>Uppgift 4</title>
+		<script src="../3.2/jquery-3.2.1.js" type="text/javascript"></script>
+		<script type="text/javascript" src="Uppgift_4.js"></script>
+	</head>
+		
+	<body>
+		<header>
+			<h1>Filip Wennerdahl - Portfolio</h1>
+		</header>
+
+		<div class="tabs">
+			<ul class="tab-links">
+				<li class="active"><a href="#tab1">About Me</a></li>
+				<li><a href="#tab2">Code Samples</a></li>
+				<li><a href="#tab3">CV</a></li>
+				<li><a href="#tab4">Contact</a></li>
+			</ul>
+
+			<div class="tab-content">
+
+
+
+				<div id="tab1" class="tab active">
+					<div class="content">
+						
+						<div id="tab1ImageContainer">
+							<img src="Bilder/ImageFilip.png" alt="Image Filip" id="mainFilip">
+							<div id="imageRow">
+								<img src="Bilder/ImageFilip4.jpg" alt="Image Filip2" class="imageFilip" id="filip4">
+								<img src="Bilder/ImageFilip3.jpg" alt="Image Filip2" class="imageFilip" id="filip3">
+								<img src="Bilder/ImageFilip2.png" alt="Image Filip2" class="imageFilip" id="filip2">
+								<img src="Bilder/ImageFilip.png" alt="Image Filip" class="imageFilip" id="filip1">						
+							</div>
+						</div>
+						<h3 id="welcome">Welcome to portfilio of Filip Wennedahl</h3>
+						<div id="aboutMe">
+							<p>I am newly graduated bachelor student in the field of system sciences. My work have  mainly been focused around game-, system- and web development, where my core passion lies in programming and designing good, stable systems.</p>
+							<p>Currently I am employed as an IT consultant at Kentor, a company that provides services such as system development, integration and application administration.</p>
+							<p>Since I have a huge interest in games and the fast growing market of game development I use some of my spare time to both play and develop games. When I'm not spending time in front of a screen you will usually find me out roaming in nature, all to keep both a healthy mental and physical balance.</p>
+							<p>Feel free to check out my work, both under the code sample and CV tab but also this website as a whole.</p>	
+						</div>
+
+					</div>
+					
+				</div>
+
+
+
+				<div id="tab2" class="tab">
+					<div class="content">
+						<h3>C#</h3>
+						<textarea readonly>
+private void ApplyForce() {
+	float forceEndTime = forceStartTime + forceLength;
+	if (force != Vector3.zero && Time.time < forceEndTime) {
+    	controller.Move(force * Time.deltaTime);
+    	force.x *= deacceleration;
+		force.z *= deacceleration;
+	} else {
+		force = Vector3.zero;
+		animator.SetBool("isBlowing", false);
+	}
+	
+	if (forceEndTime < Time.time + (forceLength * forceFalloffThreshold) && Time.time < forceEndTime) {
+		if (force.y > 0) {
+			force.y *= -1;
+		}
+		force.y *= 2 - deacceleration;
+	}
+
+}
+						</textarea>
+						<div class="imageContainer">
+							<div class="image"><img src="Bilder/RocketStill.gif" alt="RocketDemonstration" class="innerImage" id="imageRocket"></div>
+						</div>
+						<div class="imageContainer">
+							<div class="image"><img src="Bilder/BlowStill.gif" alt="BlowDemonstration" class="innerImage" id="imageBlow"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+
+
+
+				<div id="tab3" class="tab">
+					<div class="content">
+						<iframe src="https://drive.google.com/file/d/0Bw9PVXgYHxbLekhHdGJ6d1drb2c/preview" width="680" height="720"></iframe>
+						
+					</div>
+					
+
+				</div>
+
+
+
+				<div id="tab4" class="tab">
+
+					<div class="content">
+						<div id="contactHeader">
+							
+							<h3>My contact information</h3>
+						</div>
+
+						<div id="contactBody">
+							<div id="infoTitle">
+								<p>Phone:</p>
+								<p>E-mail:</p>
+								<p>LinkedIn:</p>
+							</div>
+							<div id="info">
+								<p>0734 - 16 69 68</p>
+								<p><a href="mailto:filipwennerdahl@hotmail.com?Subject=Hello">filipwennerdahl@hotmail.com</a></p>
+								<p><a href="https://www.linkedin.com/in/filip-wennerdahl/">Profile</a></p>
+							</div>
+						</div>
+							
+					</div>
+					
+				</div>
+			
+			</div>
+
+		</div>
+
+ 	</body>
+
+</html>

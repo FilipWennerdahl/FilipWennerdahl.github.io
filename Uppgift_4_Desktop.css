@@ -1,0 +1,235 @@
+body{
+	font-family: "Lato", sans-serif;
+	background-image: url("https://drive.google.com/uc?export=download&id=0Bw9PVXgYHxbLTlhqX1RkRjJuc0U");
+	background-size: auto 140%;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+header{
+	text-align: center;
+	padding-top: 30px;
+	color: white;
+	text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
+
+.tabs{
+	width: 800px;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+#tab1{
+	height: 350px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+#tab1 #welcome{
+	text-align: center;
+}
+
+#tab1 p{
+	font-family: "Garaomd", serif;
+}
+
+#tab1 #mainFilip{
+	float: right;
+	clear: right;
+	width: 200px;
+	height: auto;
+	border: solid black 3px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 140px;
+}
+
+#tab1 #imageRow{
+	clear: right;
+	float: right;
+	margin-right: 13px;
+	margin-top: 10px;
+}
+
+#tab1 .imageFilip{
+	width: 40px;
+	height: auto;
+	border: solid black 1px;
+	margin: 5px;
+	border-radius: 140px;
+	float: right;
+	cursor: pointer;
+}
+
+#tab1 #tab1ImageContainer{
+	float: right;
+	/*border: solid black 1px;
+	border-radius: 5px;*/
+	padding: 3px;
+	margin-top: 10px;
+	/*margin: 3px;*/
+}
+
+#tab2{
+	margin-top: -10px;
+	overflow: auto;
+	height: 502px;
+}
+
+#tab2 textarea{
+	width: 40%;
+	height: 350px;
+	background-color:#e5f4ff;
+	/*min-width: 40%;
+	max-width: 99%;*/
+	width: 99%;
+	/*min-height: 200px;
+	max-height: 350px;*/
+	height: 280px;
+	white-space: pre;
+	font-size: 0.9em;
+	margin-top: -15px;
+	resize: none;
+	display: block;
+	border: solid black 1px;
+	border-radius: 3px;
+}
+
+#tab2 h3{
+	margin-left: 15px;
+}
+
+#tab2 .image{
+	width: 130px;
+	height: 130px;
+	border: solid black 2px;
+	border-radius: 3px;
+	overflow: hidden;
+	margin: 20px;
+	cursor: zoom-in;
+	float: left;
+}
+
+#tab2 #imageRocket{
+	width: 400px;
+	height: auto;
+}
+
+#tab2 #imageBlow{
+	width: 400px;
+	height: auto;
+}
+
+#tab3{
+	height: auto;
+}
+
+#tab3 iframe{
+	border: solid black 1px;
+	border-radius: 3px;
+	width: 100%;
+}
+
+#tab4{
+	margin-left: 20px;
+	margin-top: -10px;
+	height: auto;
+}
+
+#tab4 #infoTitle{
+	flex: 1;
+	margin-left: 25px;
+}
+
+#tab4 #info{
+	flex: 1;
+	margin-right: 410px;
+}
+
+#tab4 #contactBody{
+	display: flex;
+}
+
+#tab4 a:link{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.9em;
+	color: #559ed1;
+}
+
+#tab4 a:visited{
+	color: #559ed1;
+}
+
+#tab4 a:hover{
+	color: #3d77a0;
+}
+
+#tab4 a:active{
+	color: #7FB5DA;
+}
+
+.content{
+	margin-top: 40;
+}
+
+.tab-links:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.tab-links li {
+	margin: 0px 5px;
+	float: left;
+	list-style: none;
+}
+
+.tab-links a{
+	padding: 9px 15px;
+	display: inline-block;
+	border-radius: 3px 3px 0px 0px;
+	background: #7FB5DA;
+	font-size: 16px;
+	font-weight: 600;
+	color: #4c4c4c;
+	transition: all linear 0.15s;
+	text-decoration: none;
+	border: solid 1px;
+	z-index: 2;
+}
+
+.tab-links a:hover{
+	background: #a7cce5;
+}
+
+li.active a, li.active a:hover{
+	background: #fff;
+	color: #4c4c4c;
+	border-bottom: solid 1px white;
+}
+
+.tab-content{
+	padding: 15px;
+	border-radius: 3px;
+	box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+	background: #fff;
+	margin-top: -17px;
+	border: solid 1px;
+	text-align: left;
+}
+
+.tab{
+	display: none;
+}
+
+.tab.active{
+	display:block;
+}
