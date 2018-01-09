@@ -65,9 +65,9 @@ $(document).ready(function() {
 			$(this).css("cursor", "zoom-out");
 			$(this).animate({height: innerImage.height(), width: innerImage.width()}, {duration: 200, complete: function() {
 				if(innerImage.attr("id") == "imageRocket"){
-					innerImage.attr("src", "Bilder/RocketMoving.gif");
+					innerImage.attr("src", "images/RocketMoving.gif");
 				} else if(innerImage.attr("id") == "imageBlow"){
-					innerImage.attr("src", "Bilder/BlowMoving.gif");
+					innerImage.attr("src", "images/BlowMoving.gif");
 				}
 				
 				}
