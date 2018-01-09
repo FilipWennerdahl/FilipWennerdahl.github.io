@@ -93,9 +93,9 @@ $(document).ready(function() {
 	var gifBlow = $("#imageBlow");
 	function ResetGif(id){
 		if(id == "imageRocket"){
-			gifRocket.attr("src", "Bilder/RocketStill.gif");
+			gifRocket.attr("src", "images/RocketStill.gif");
 		} else if(id == "imageBlow"){
-			gifBlow.attr("src", "Bilder/BlowStill.gif");
+			gifBlow.attr("src", "images/BlowStill.gif");
 		}
 	}
 
