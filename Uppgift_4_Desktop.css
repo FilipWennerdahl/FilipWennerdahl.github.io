@@ -56,6 +56,8 @@ header{
 	float: right;
 	margin-right: 13px;
 	margin-top: 10px;
+	border: solid black 1px;
+	border-radius: 30px;
 }
 
 #tab1 .imageFilip{
@@ -143,14 +145,16 @@ header{
 	height: auto;
 }
 
+#tab4 .content {
+	width: 100%;
+}
+
 #tab4 #infoTitle{
-	flex: 1;
-	margin-left: 25px;
+	margin-left: 5%;
 }
 
 #tab4 #info{
-	flex: 1;
-	margin-right: 410px;
+	margin-left: 2%;
 }
 
 #tab4 #contactBody{

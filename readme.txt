@@ -1,2 +1,5 @@
-Bakgrundsbild:
-https://drive.google.com/uc?export=download&id=0Bw9PVXgYHxbLTlhqX1RkRjJuc0U
+
+All code designed and written by me, Filip Wennerdahl.
+
+Background image used in accordance to CC0 License (creative commons):
+https://www.pexels.com/photo/nature-forest-trees-park-38136/
