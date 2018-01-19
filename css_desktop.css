@@ -79,13 +79,37 @@ header{
 	/*margin: 3px;*/
 }
 
-#tab2{
+#tab2 #botsonUndertitle{
+	margin-left: 5%;
+}
+
+#tab2 #videoBotson{
+	display: block;
+	margin: 0 auto;
+	border: solid black 2px;
+}
+
+#tab2 .role{
+	display: flex;
+	font-size: 16px;
+}
+
+#tab2 .roleTitle{
+	margin-left: 5%;
+	font-weight: bold;
+}
+
+#tab2 .roleInfo {
+	margin-left: 2%;
+}
+
+#tab3{
 	margin-top: -10px;
 	overflow: auto;
 	height: 502px;
 }
 
-#tab2 textarea{
+#tab3 textarea{
 	width: 40%;
 	height: 350px;
 	background-color:#e5f4ff;
@@ -104,11 +128,11 @@ header{
 	border-radius: 3px;
 }
 
-#tab2 h3{
+#tab3 h3{
 	margin-left: 15px;
 }
 
-#tab2 .image{
+#tab3 .image{
 	width: 130px;
 	height: 130px;
 	border: solid black 2px;
@@ -119,64 +143,64 @@ header{
 	float: left;
 }
 
-#tab2 #imageRocket{
+#tab3 #imageRocket{
 	width: 400px;
 	height: auto;
 }
 
-#tab2 #imageBlow{
+#tab3 #imageBlow{
 	width: 400px;
 	height: auto;
 }
 
-#tab3{
+#tab4{
 	height: auto;
 }
 
-#tab3 iframe{
+#tab4 iframe{
 	border: solid black 1px;
 	border-radius: 3px;
 	width: 100%;
 }
 
-#tab4{
+#tab5{
 	margin-left: 20px;
 	margin-top: -10px;
 	height: auto;
 }
 
-#tab4 .content {
+#tab5 .content {
 	width: 100%;
 }
 
-#tab4 #infoTitle{
+#tab5 #infoTitle{
 	margin-left: 5%;
 }
 
-#tab4 #info{
+#tab5 #info{
 	margin-left: 2%;
 }
 
-#tab4 #contactBody{
+#tab5 #contactBody{
 	display: flex;
 }
 
-#tab4 a:link{
+#tab5 a:link{
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 0.9em;
 	color: #559ed1;
 }
 
-#tab4 a:visited{
+#tab5 a:visited{
 	color: #559ed1;
 }
 
-#tab4 a:hover{
+#tab5 a:hover{
 	color: #3d77a0;
 }
 
-#tab4 a:active{
+#tab5 a:active{
 	color: #7FB5DA;
 }
 

@@ -3,8 +3,8 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<link rel="stylesheet" href="Uppgift_4_Desktop.css">
-		<link rel="stylesheet" href="Uppgift_4_Mobile.css" media="(max-width: 820px)">
+		<link rel="stylesheet" href="css_desktop.css">
+		<link rel="stylesheet" href="css_mobile.css" media="(max-width: 820px)">
 		<title>Portfolio of Filip Wennerdahl</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="index.js"></script>
@@ -18,9 +18,10 @@
 		<div class="tabs">
 			<ul class="tab-links">
 				<li class="active"><a href="#tab1">About Me</a></li>
-				<li><a href="#tab2">Code Samples</a></li>
-				<li><a href="#tab3">CV</a></li>
-				<li><a href="#tab4">Contact</a></li>
+				<li><a href="#tab2">Works/Projects</a></li>
+				<li><a href="#tab3">Code Samples</a></li>
+				<li><a href="#tab4">CV</a></li>
+				<li><a href="#tab5">Contact</a></li>
 			</ul>
 
 			<div class="tab-content">
@@ -52,8 +53,31 @@
 				</div>
 
 
-
 				<div id="tab2" class="tab">
+
+					<div class="content">
+						<h3 id="botsonTitle">Botson & FindOS</h3>
+						<platformer></platformer></h4>
+						<iframe id="videoBotson" width="560" height="315" src="https://www.youtube.com/embed/KT1SzL1UhQw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<br/>
+						<h4	 id="botsonUndertitle">2 Player Co-op Puzzle-Platformer</h4>
+						<div class="role">
+							<div class="roleTitle">
+								<p>Role:</p>
+								<p>Work detial:</p>
+							</div>
+							<div class="roleInfo">
+								<p>Programmer</p>
+								<p>Character movement, trap and item behaviour, physics enhancements, general scripting</p>
+							</div>
+						</div>
+							
+					</div>
+					
+				</div>
+
+
+				<div id="tab3" class="tab">
 					<div class="content">
 						<h3>C#</h3>
 						<textarea readonly>
@@ -90,10 +114,9 @@ private void ApplyForce() {
 
 
 
-				<div id="tab3" class="tab">
+				<div id="tab4" class="tab">
 					<div class="content">
-						<iframe src="https://drive.google.com/file/d/0Bw9PVXgYHxbLekhHdGJ6d1drb2c/preview" width="680" height="720"></iframe>
-						
+						<iframe id="cv" src="https://drive.google.com/file/d/0Bw9PVXgYHxbLekhHdGJ6d1drb2c/preview" width="680" height="720"></iframe>			
 					</div>
 					
 
@@ -101,7 +124,7 @@ private void ApplyForce() {
 
 
 
-				<div id="tab4" class="tab">
+				<div id="tab5" class="tab">
 
 					<div class="content">
 						<div id="contactHeader">

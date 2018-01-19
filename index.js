@@ -54,7 +54,7 @@ $(document).ready(function() {
 	var innerImage;
 	var originalHeight = $(".image").height();
 	var originalWidth = $(".image").width();
-	var tab = $("#tab2");
+	var tab = $("#tab3");
 	var tabHeight = tab.height();
 
 	//Vid tryck så animeras bilden och blir större samtidigt som en gif spelas upp. Storleken på en tab ändras också när bilden blir större.
