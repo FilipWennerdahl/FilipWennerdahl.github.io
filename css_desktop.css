@@ -38,6 +38,12 @@ header{
 	visibility: hidden;
 }
 
+.content{
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
 .tabs{
 	width: 800px;
 	display: inline-block;
@@ -45,7 +51,21 @@ header{
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
-	visibility: hidden;
+}
+
+.tab-content{
+	padding: 15px;
+	border-radius: 3px;
+	box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+	background: rgb(255, 255, 255);
+	z-index: 0;
+	border: solid 1px;
+	text-align: left;
+	margin-top: 6.9%;
+	width: 100%;
+	max-height: 75vh;
+	position: fixed;
+	overflow: auto;
 }
 
 #tab1{
@@ -60,7 +80,7 @@ header{
 
 #tab1 p{
 	font-family: "Garaomd", serif;
-}
+}	
 
 #tab1 #mainFilip{
 	float: right;
@@ -118,10 +138,11 @@ header{
 
 #tab2 .roleTitle{
 	font-weight: bold;
+	width: 15%;
 }
 
 #tab2 .roleInfo {
-	margin-left: 2%;
+	width: 80%;
 }
 
 #tab3{
@@ -182,6 +203,7 @@ header{
 	border: solid black 1px;
 	border-radius: 3px;
 	width: 100%;
+	height: 73vh;
 }
 
 #tab5{
@@ -190,16 +212,17 @@ header{
 	height: auto;
 }
 
-#tab5 .content {
-	width: 100%;
+#tab5 .content{
+	margin-left: 1%;
 }
 
 #tab5 #infoTitle{
+	width: 15%;
 	margin-left: 5%;
 }
 
 #tab5 #info{
-	margin-left: 2%;
+	width: 80%;
 }
 
 #tab5 #contactBody{
@@ -225,8 +248,9 @@ header{
 	color: #7FB5DA;
 }
 
-.content{
-	margin-top: 40;
+.tab-links{
+	position: fixed;
+	z-index: 1;
 }
 
 .tab-links:after {
@@ -265,20 +289,21 @@ li.active a, li.active a:hover{
 	border-bottom: solid 1px white;
 }
 
-.tab-content{
-	padding: 15px;
-	border-radius: 3px;
-	box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
-	background: #fff;
-	margin-top: -17px;
-	border: solid 1px;
-	text-align: left;
-}
-
 .tab{
 	display: none;
 }
 
 .tab.active{
 	display:block;
+}
+
+.windowsLogo{
+	height: 1em;
+	width: auto;
+}
+
+.screenshot{
+	display: block;
+	margin: 0 auto;
+	border: solid black 2px;
 }

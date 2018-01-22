@@ -1,3 +1,4 @@
+
 $('<img/>').attr('src', 'https://drive.google.com/uc?export=download&id=0Bw9PVXgYHxbLTlhqX1RkRjJuc0U').on('load', function() {
 	$(this).remove(); // prevent memory leaks as @benweet suggested
 	$('body').css('background-image', 'url(https://drive.google.com/uc?export=download&id=0Bw9PVXgYHxbLTlhqX1RkRjJuc0U)');
@@ -5,8 +6,9 @@ $('<img/>').attr('src', 'https://drive.google.com/uc?export=download&id=0Bw9PVXg
 	$(".tabs").css("visibility", "visible");
 	$(".loader").css("visibility", "hidden");
  });
-$(document).ready(function() {
 
+$(document).ready(function() {
+	
 	//Yttre länkar öppnas i ett nytt fönster och den aktiva lilla bilden på tab1 markeras.
 	$("a[href^='http://'], a[href^='https://']").attr("target","_blank");
 	$("#filip1").css("opacity", "0.4");
