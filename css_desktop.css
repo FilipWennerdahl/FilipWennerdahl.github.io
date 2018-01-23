@@ -37,6 +37,7 @@ header{
     -2px 2px 0 #000,
 	2px 2px 0 #000;  
 	visibility: hidden;
+	height: 15%;
 }
 
 .content{
@@ -46,13 +47,14 @@ header{
 }
 
 .tabs{
-	visibility: hidden;
+	visibility: hidden;	
 	width: 800px;
 	display: inline-block;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
+	height: 83%;
 }
 
 .tab-content{
@@ -65,7 +67,7 @@ header{
 	text-align: left;
 	margin-top: 6.9%;
 	width: 100%;
-	max-height: 75vh;
+	max-height: 85%;
 	position: fixed;
 	overflow: auto;
 }
@@ -248,6 +250,10 @@ header{
 
 #tab5 a:active{
 	color: #7FB5DA;
+}
+
+.tab{
+	height: 100%;
 }
 
 .tab-links{
