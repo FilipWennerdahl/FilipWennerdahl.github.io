@@ -62,7 +62,6 @@ header{
 	border-radius: 3px;
 	box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
 	background: rgb(255, 255, 255);
-	z-index: 0;
 	border: solid 1px;
 	text-align: left;
 	/* margin-top: 6.9%; */
@@ -259,7 +258,6 @@ header{
 
 .tab-links{
 	position: relative;
-	z-index: 1;
 	margin-bottom: -56px;
 	overflow: visible;
 	height: 60px;
@@ -279,8 +277,7 @@ header{
 	list-style: none;
 	position: relative;
 	overflow: visible;
-	z-index: 2;
-	top: 1px;
+	top: 4px;
 }
 
 .tab-links a{
@@ -294,6 +291,7 @@ header{
 	transition: all linear 0.15s;
 	text-decoration: none;
 	border: solid 1px;
+	border-bottom: solid 1px;
 }
 
 .tab-links a:hover{
@@ -303,7 +301,10 @@ header{
 li.active a, li.active a:hover{
 	background: #fff;
 	color: #4c4c4c;
-	border-bottom: solid 1px white;
+	border-bottom: solid 2px white;
+	position: relative;
+	z-index: 10;
+	top: -3px;
 }
 
 .tab{
