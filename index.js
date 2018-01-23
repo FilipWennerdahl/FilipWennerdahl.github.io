@@ -1,7 +1,6 @@
-
-$('<img/>').attr('src', 'https://drive.google.com/uc?export=download&id=0Bw9PVXgYHxbLTlhqX1RkRjJuc0U').on('load', function() {
-	$(this).remove(); // prevent memory leaks as @benweet suggested
-	$('body').css('background-image', 'url(https://drive.google.com/uc?export=download&id=0Bw9PVXgYHxbLTlhqX1RkRjJuc0U)');
+$('<img/>').attr('src', 'images/background.jpeg').on('load', function() {
+	$(this).remove();
+	$('body').css('background-image', 'url(images/background.jpeg)');
 	$("header").css("visibility", "visible");
 	$(".tabs").css("visibility", "visible");
 	$(".loader").css("visibility", "hidden");
