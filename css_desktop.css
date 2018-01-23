@@ -261,6 +261,8 @@ header{
 	z-index: 1;
 }
 
+:focus {outline:none;}
+
 .tab-links:after {
 	display: block;
 	clear: both;
