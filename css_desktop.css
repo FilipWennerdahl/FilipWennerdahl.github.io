@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Berlin'; /*a name to be used later*/
+    src: url('fonts/Berlin.ttf'); /*URL to font*/
+}
+
 body{
 	font-family: "Lato", sans-serif;
 	/* background-image: url("images/background.jpeg"); */
@@ -29,7 +34,7 @@ body{
 
 header{
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 1em;
 	color: white;
 	text-shadow:
     -2px -2px 0 #000,
@@ -55,6 +60,7 @@ header{
 	transform: translateX(-50%);
 	text-align: center;
 	height: 83%;
+	margin-top: -1em;
 }
 
 .tab-content{
@@ -73,7 +79,7 @@ header{
 }
 
 #tab1{
-	height: 370px;
+	height: auto;
 	margin-top: 10px;
 	margin-left: 15px;
 }
@@ -104,6 +110,7 @@ header{
 	margin-top: 10px;
 	border: solid black 1px;
 	border-radius: 30px;
+	background: #e5f4ff;
 }
 
 #tab1 .imageFilip{
@@ -123,6 +130,10 @@ header{
 	padding: 3px;
 	margin-top: 10px;
 	/*margin: 3px;*/
+}
+
+#tab1 #aboutMe{
+	padding-bottom: 1%;
 }
 
 #tab2 #videoBotson{
@@ -151,7 +162,6 @@ header{
 
 #tab3{
 	margin-top: -10px;
-	overflow: auto;
 	height: 502px;
 }
 
@@ -207,7 +217,7 @@ header{
 	border: solid black 1px;
 	border-radius: 3px;
 	width: 100%;
-	height: 73vh;
+	height: 65vh;
 }
 
 #tab5{
@@ -325,3 +335,13 @@ li.active a, li.active a:hover{
 	margin: 0 auto;
 	border: solid black 2px;
 }
+
+h1, h2, h3 {
+	font-family: 'Berlin';
+	letter-spacing: 0.05em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
