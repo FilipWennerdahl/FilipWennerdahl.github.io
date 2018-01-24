@@ -192,7 +192,8 @@ header{
 	max-height: 350px;*/
 	height: 280px;
 	white-space: pre;
-	font-size: 0.9em;
+	font-size: 0.73em;
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	margin-top: -15px;
 	resize: none;
 	display: block;
