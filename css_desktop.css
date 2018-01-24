@@ -174,7 +174,8 @@ header{
 
 #tab3{
 	margin-top: -10px;
-	height: 502px;
+	/* height: 502px; */
+	height: 
 }
 
 #tab3 textarea{
@@ -212,12 +213,12 @@ header{
 }
 
 #tab3 #imageRocket{
-	width: 400px;
+	width: 330px;
 	height: auto;
 }
 
 #tab3 #imageBlow{
-	width: 400px;
+	width: 330px;
 	height: auto;
 }
 

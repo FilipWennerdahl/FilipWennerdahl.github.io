@@ -79,7 +79,7 @@ $(document).ready(function() {
 				}
 			
 			});
-			tab.animate({height: tabHeight + (innerImage.height() - originalHeight)}, {duration: 200});
+			// tab.animate({height: tabHeight + (innerImage.height() - originalHeight)}, {duration: 200});
 			
 		} else if($(this).width() != originalWidth){
 			$(this).animate({height: originalHeight, width: originalWidth}, {duration: 200, complete: function() {
@@ -89,7 +89,7 @@ $(document).ready(function() {
 		
 		});
 	
-		tab.animate({height: tabHeight}, {duration: 200});
+		// tab.animate({height: tabHeight}, {duration: 200});
 		}
 	});
 
