@@ -172,10 +172,13 @@ header{
 	width: 80%;
 }
 
-#tab3{
+#tab3 {
 	margin-top: -10px;
-	/* height: 502px; */
-	height: 
+}
+
+#tab3 .clear{
+	clear: left;
+	display: block;
 }
 
 #tab3 textarea{
