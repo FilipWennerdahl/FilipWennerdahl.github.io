@@ -5,11 +5,23 @@
 
 body{
 	font-family: "Lato", sans-serif;
-	/* background-image: url("images/background.jpeg"); */
+	overflow: hidden;
+}
+
+#background{
+	left: 0;
+	top: 0;
+	display: inline-block;
+	margin: 0 auto;
+	position: absolute;
+	height: 110%;
+	width: 110%;
 	background-size: auto 140%;
 	background-attachment: fixed;
 	background-position: center;
-	height: 100%;
+	opacity: 0.9;
+	z-index: -5;
+
 }
 
 .loader {

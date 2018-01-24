@@ -1,6 +1,6 @@
 $('<img/>').attr('src', 'images/background.jpeg').on('load', function() {
 	$(this).remove();
-	$('body').css('background-image', 'url(images/background.jpeg)');
+	$("#background").css('background-image', 'url(images/background.jpeg)');
 	$("header").css("visibility", "visible");
 	$(".tabs").css("visibility", "visible");
 	$(".loader").css("visibility", "hidden");
@@ -8,13 +8,12 @@ $('<img/>').attr('src', 'images/background.jpeg').on('load', function() {
 
 $(document).ready(function() {
 	
-	//Yttre länkar öppnas i ett nytt fönster och den aktiva lilla bilden på tab1 markeras.
+	//New browser tab for external links
 	$("a[href^='http://'], a[href^='https://']").attr("target","_blank");
 	$("#filip1").css("opacity", "0.4");
 
 
-	//Funktion som hanterar tab-byte, taben byts och den aktiva fliken markeras.
-	//Taben får en aniemrad storleksbyttning.
+	//Used to change and animate the active tab 
 	var lastAttrValue = $(".active a").attr("href");
 	$(".tabs .tab-links a").click(function(e){
 		var currentAttrValue = $(this).attr("href");
@@ -41,7 +40,7 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
-	//Byter bild på tab1, när en liten bild klickas byts bilden i stora ramen ut mot den som är tryckt på i lilla
+	//Used to change picture in the big picture frame on tab 1
 	var selectedImage = $("#filip1");
 	$(".imageFilip").click(function(){
 		var imageClicked = $(this).attr("src");
@@ -58,15 +57,14 @@ $(document).ready(function() {
 	});
 
 
-	//Variabler som behövs för att dynamiskt ändra storleken på en tab
+
 	var innerImage;
 	var originalHeight = $(".image").height();
 	var originalWidth = $(".image").width();
 	var tab = $("#tab3");
 	var tabHeight = tab.height();
 
-	//Vid tryck så animeras bilden och blir större samtidigt som en gif spelas upp. Storleken på en tab ändras också när bilden blir större.
-	//Vid ett ytterligare tryck slutar gifen spela och bilden krymper igen.
+	//Used to enlarge and animate example images on tab 3
 	$(".image").click(function(){
 		innerImage = $(this).find(".innerImage");
 		if(!$(this).is(":animated") && $(this).width() == originalWidth){
@@ -96,7 +94,7 @@ $(document).ready(function() {
 	});
 
 
-	//Funktion som håller koll på återställning av gifen som står still.
+	//Help function to reset gif on tab 3
 	var gifRocket = $("#imageRocket");
 	var gifBlow = $("#imageBlow");
 	function ResetGif(id){
