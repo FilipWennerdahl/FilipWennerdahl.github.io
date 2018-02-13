@@ -123,8 +123,7 @@ private void ApplyForce() {
 		force.y *= 2 - deacceleration;
 	}
 
-}
-						</textarea>
+}</textarea>
 						<div class="imageContainer">
 							<div class="image"><img src="images/RocketStill.gif" alt="RocketDemonstration" class="innerImage" id="imageRocket"></div>
 						</div>
@@ -132,6 +131,73 @@ private void ApplyForce() {
 							<div class="image"><img src="images/BlowStill.gif" alt="BlowDemonstration" class="innerImage" id="imageBlow"></div>
 						</div>
 						<span class="clear"></span>
+
+
+						<textarea readonly>
+private void ActionAndUpdateTime() {
+	if (buttonsToDeactivate != 0 && buttonsPressed >= buttonsToDeactivate) return;
+	if (timeInfluencedP1 && timeInfluencedP2 && (timeTracker.IsP1Moving() || timeTracker.IsP2Moving())) {
+		UpdateTime();
+		Action();
+	} else if (timeInfluencedP1 && !timeInfluencedP2 && timeTracker.IsP1Moving()) {
+		UpdateTime();
+		Action();
+	} else if (!timeInfluencedP1 && timeInfluencedP2 && timeTracker.IsP2Moving()) {
+		UpdateTime();
+		Action();
+	} else if (!timeInfluencedP1 && !timeInfluencedP2) {
+		UpdateTime();
+		Action();
+	}
+}
+
+protected abstract void Action();
+
+protected void UpdateTime() {
+	if (timeInfluencedP1 && timeInfluencedP2) {
+		time = timeTracker.getTime();
+	} else if(timeInfluencedP1){
+		time = timeTracker.getTimeP1();
+	} else if (timeInfluencedP2) {
+		time = timeTracker.getTimeP2();
+	} else {
+		time = Time.time;
+	}
+}</textarea>
+
+						<div class="imageContainer">
+							<div class="image"><img src="images/TwoPlatformsStill.gif" alt="TwoPlatformDemonstration" class="innerImage" id="imageTwoPlatforms"></div>
+						</div>
+
+						<div class="imageContainer">
+							<div class="image"><img src="images/BladeTrapStill.gif" alt="BladeTrapDemonstration" class="innerImage" id="imageBladeTrap"></div>
+						</div>
+
+						<textarea readonly>
+private void FireCannon() {
+	//Create Projectile
+	if (time > lastFireOccasion + fireCooldown) {	
+		Transform cannonTransform = transform.GetChild(0);
+		Vector3 projectilePosition = cannonTransform.position;
+		projectilePosition.y += 0.72f;
+		TemporaryProjectile = Instantiate(projectile, projectilePosition, cannonTransform.rotation);
+		CannonPorjectileScript cannonProjectileScript = TemporaryProjectile.GetComponent<CannonProjectileScript>();
+
+		if(widerBulletCollision) {
+			cannonProjectileScript.WideCollisionBox();
+		}
+
+		lastFireOccasion = time;
+		cannonProjectileScript.setDirectionSpeedRange(aimDirection, projectileSpeed, projectileRange);
+		PlaySound();
+		cannonParticle.Play();					
+	}						
+}</textarea>
+
+						<div class="imageContainer">
+							<div class="image"><img src="images/CannonStill.gif" alt="CannonDemonstration" class="innerImage" id="imageCannon"></div>
+						</div>
+
 					</div>
 					
 				</div>

@@ -190,7 +190,7 @@ header{
 	width: 99%;
 	/*min-height: 200px;
 	max-height: 350px;*/
-	height: 280px;
+	height: 295px;
 	white-space: pre;
 	font-size: 0.73em;
 	font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
@@ -216,13 +216,8 @@ header{
 	float: left;
 }
 
-#tab3 #imageRocket{
-	width: 330px;
-	height: auto;
-}
-
-#tab3 #imageBlow{
-	width: 330px;
+#tab3 .innerImage{
+	width: 325px;
 	height: auto;
 }
 

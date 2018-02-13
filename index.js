@@ -74,6 +74,12 @@ $(document).ready(function() {
 					innerImage.attr("src", "images/RocketMoving.gif");
 				} else if(innerImage.attr("id") == "imageBlow"){
 					innerImage.attr("src", "images/BlowMoving.gif");
+				} else if(innerImage.attr("id") == "imageCannon"){
+					innerImage.attr("src", "images/CannonMoving.gif");
+				} else if(innerImage.attr("id") == "imageTwoPlatforms"){
+					innerImage.attr("src", "images/TwoPlatformsMoving.gif");
+				} else if(innerImage.attr("id") == "imageBladeTrap"){
+					innerImage.attr("src", "images/BladeTrapMoving.gif");
 				}
 				
 				}
@@ -97,11 +103,20 @@ $(document).ready(function() {
 	//Help function to reset gif on tab 3
 	var gifRocket = $("#imageRocket");
 	var gifBlow = $("#imageBlow");
+	var gifCannon = $("#imageCannon");
+	var gifTwoPlatforms = $("#imageTwoPlatforms");
+	var gifBladeTrap = $("#imageBladeTrap");
 	function ResetGif(id){
 		if(id == "imageRocket"){
 			gifRocket.attr("src", "images/RocketStill.gif");
 		} else if(id == "imageBlow"){
 			gifBlow.attr("src", "images/BlowStill.gif");
+		} else if(id == "imageCannon"){
+			gifCannon.attr("src", "images/CannonStill.gif");
+		} else if(id == "imageTwoPlatforms"){
+			gifTwoPlatforms.attr("src", "images/TwoPlatformsStill.gif");
+		} else if(id == "imageBladeTrap"){
+			gifBladeTrap.attr("src", "images/BladeTrapStill.gif");
 		}
 	}
 
