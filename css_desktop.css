@@ -148,6 +148,12 @@ header{
 	padding-bottom: 1%;
 }
 
+#tab2 #outerGameContainer {
+	margin: 0 auto;
+	border: solid black 2px;
+	width: 279px;
+}
+
 #tab2 #videoBotson{
 	display: block;
 	margin: 0 auto;

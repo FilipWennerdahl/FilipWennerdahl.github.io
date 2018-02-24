@@ -7,10 +7,6 @@ $('<img/>').attr('src', 'images/background.jpeg').on('load', function() {
  });
 
 $(document).ready(function() {
-	
-	//Load the Mobile Space Game WebGL
-	var gameContainer = $("#gameContainer");
-	UnityLoader.instantiate(gameContainer, "games/MobileSpaceGame-WebGL/Build/MobileSpaceGame-WebGL.json");
 
 	//New browser tab for external links
 	$("a[href^='http://'], a[href^='https://']").attr("target","_blank");
