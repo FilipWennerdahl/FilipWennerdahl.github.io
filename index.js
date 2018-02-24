@@ -10,7 +10,7 @@ $(document).ready(function() {
 	
 	//Load the Mobile Space Game WebGL
 	var gameContainer = $("#gameContainer");
-	UnityLoader.instantiate(gameContainer, "https://raw.githubusercontent.com/FilipWennerdahl/MobileSpaceGame/master/Game-WebGL/Build/Game%20-%20WebGL.json");
+	UnityLoader.instantiate(gameContainer, "games/MobileSpaceGame-WebGL/Build/MobileSpaceGame-WebGL.json");
 
 	//New browser tab for external links
 	$("a[href^='http://'], a[href^='https://']").attr("target","_blank");
