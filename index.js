@@ -15,7 +15,7 @@ $(document).ready(function() {
 			gameLoaded = true;
 			$(this).animate({height: "496px", width: "279px"}, {duration: 200, complete: function() {
 					$("#gameContainer").css("text-indent", "0px");
-					UnityLoader.instantiate("gameContainer", "https://rawgit.com/FilipWennerdahl/MobileSpaceGame/master/Game-WebGL/Build/Game%20-%20WebGL.json");				
+					UnityLoader.instantiate("gameContainer", "https://rawgit.com/FilipWennerdahl/MobileSpaceGame/master/Game-WebGL/Build/Game-WebGL.json");				
 				}	
 			});	
 		}		
