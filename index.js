@@ -8,6 +8,19 @@ $('<img/>').attr('src', 'images/background.jpeg').on('load', function() {
 
 $(document).ready(function() {
 
+	//Expands the div and loads the game when the button is clicked
+	var gameLoaded = false;	
+	$("#outerGameContainer").click(function(){ 
+		if(!gameLoaded) {
+			gameLoaded = true;
+			$(this).animate({height: "496px", width: "279px"}, {duration: 200, complete: function() {
+					$("#gameContainer").css("text-indent", "0px");
+					UnityLoader.instantiate("gameContainer", "https://rawgit.com/FilipWennerdahl/MobileSpaceGame/master/Game-WebGL/Build/Game%20-%20WebGL.json");				
+				}	
+			});	
+		}		
+	});	
+
 	//New browser tab for external links
 	$("a[href^='http://'], a[href^='https://']").attr("target","_blank");
 	$("#filip1").css("opacity", "0.4");
