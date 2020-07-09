@@ -54,7 +54,7 @@ export default class Misc extends React.Component {
 							<div className={"miscContainer_content miscContainer_text " + 
 							(this.props.currentPage === PAGE.MISC ? "miscContainer_text-visible" : "")
 							}>
-								Currently I'm only interested in full-stack work, I'd would also like to expand my app development skills. I am NOT interested in test automation or pure java development at this moment.
+								Currently I'm only interested in full-stack work, I'd also like to expand my app development skills. I am NOT interested in test automation or pure java development at this moment.
 							</div>
 
 							<div className={"miscContainer_contactInfo " +

@@ -86,19 +86,27 @@ export default class Introduction extends React.Component {
 								</li>
 
 								<li>
+									<a href="https://github.com/elraccoone/react-unity-webgl" target="_blank" rel="noopener noreferrer">
 									React Unity WebGL
+									</a>
 								</li>
 
 								<li>
-									React Color
+									<a href="https://casesandberg.github.io/react-color/" target="_blank" rel="noopener noreferrer">
+										React Color
+									</a>
 								</li>
 
 								<li>
-									Universal Cookie
+									<a href="https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie" target="_blank" rel="noopener noreferrer">
+										Universal Cookie
+									</a>
 								</li>
 
 								<li>
-									React Swipeable
+									<a href="https://github.com/FormidableLabs/react-swipeable" target="_blank" rel="noopener noreferrer">
+										React Swipeable
+									</a>
 								</li>
 							</ul>
 						</div>

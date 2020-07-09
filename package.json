@@ -11,7 +11,7 @@
     "react": "^16.13.1",
     "react-color": "^2.18.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.1",
     "react-swipeable": "^5.5.1",
     "react-unity-webgl": "^7.1.10",
     "universal-cookie": "^4.0.3"
@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "gh-pages -d build",
-	"deploy": "git push origin gh-pages:master --force"
+    "deploy": "git push origin gh-pages:master --force"
   },
   "eslintConfig": {
     "extends": "react-app"

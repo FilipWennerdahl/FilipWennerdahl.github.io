@@ -12,8 +12,12 @@ import GoLogo from "../../resources/icons/go.svg";
 import JavaLogo from "../../resources/icons/java.svg";
 import JavaScriptLogo from "../../resources/icons/javascript.svg";
 import JqueryLogo from "../../resources/icons/jquery.svg";
+import NodeLogo from "../../resources/icons/node.svg";
 import ReactLogo from "../../resources/icons/react.svg";
 import SeleniumLogo from "../../resources/icons/selenium.svg";
+import SqlLogo from "../../resources/icons/sql.svg";
+import PrologLogo from "../../resources/icons/prolog.svg";
+import ClojureLogo from "../../resources/icons/clojure.svg";
 
 import "./skills.scss";
 
@@ -180,8 +184,8 @@ export default class Skills extends React.Component {
 								</div>
 
 								<div className="skill">
-									Angular
-									<img src={AngularLogo} alt="angular"></img>
+									Node.js
+									<img src={NodeLogo} alt="node"></img>
 								</div>
 
 								<div className="skill skill-jquery">
@@ -208,6 +212,11 @@ export default class Skills extends React.Component {
 								<div className="skill">
 									C Sharp
 									<img src={CSharpLogo} alt="csharp"></img>
+								</div>
+
+								<div className="skill">
+									SQL
+									<img src={SqlLogo} alt="sql"></img>
 								</div>
 							</div>
 						</div>
@@ -252,6 +261,11 @@ export default class Skills extends React.Component {
 							<div className={"blinderEffect " +
 							(this.props.currentPage === PAGE.SKILLS ? "blinderEffect-active" : "")
 							}>
+								<div className="skill">
+									Angular
+									<img src={AngularLogo} alt="angular"></img>
+								</div>
+								
 								<div className="skill skill-html">
 									React
 									<img src={ReactLogo} alt="react"></img>
@@ -287,6 +301,16 @@ export default class Skills extends React.Component {
 								<div className="skill skill-apple">
 									Objective-C
 									<i className="fa fa-apple" aria-hidden="true"></i>
+								</div>
+
+								<div className="skill">
+									Prolog
+									<img src={PrologLogo} alt="prolog"></img>
+								</div>
+
+								<div className="skill">
+									Clojure
+									<img src={ClojureLogo} alt="clojure"></img>
 								</div>
 							</div>
 						</div>
