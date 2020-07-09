@@ -170,13 +170,13 @@ export default class Games extends React.Component {
 					<div className={"gameText " +
 					(this.props.currentPage === PAGE.GAMES ? "gameText-visible" : "")
 					}>
-						The team consisted of three developers and two designers where my role as a developer included tasks such as: Character movement, trap and item behaviour, physics enhancements, level design, general scripting and QA/bug fixing.
+						The team consisted of three developers and two designers where my role as a developer included tasks such as: character movement, trap and item behaviour, physics enhancements, level design, general scripting and QA/bug fixing.
 					</div>
 
 					<div className={"gameText " +
 					(this.props.currentPage === PAGE.GAMES ? "gameText-visible" : "")
 					}>
-						Botson & FindOS is nominated for Best Execution in Design at Swedish Game Awards 2017.
+						Botson & FindOS was nominated for Best Execution in Design at Swedish Game Awards 2017.
 					</div>
 				</div>
 

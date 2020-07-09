@@ -30,7 +30,11 @@ export default class Introduction extends React.Component {
 						<div className="introductionRow_content">
 							<div className={"introductionText " + 
 							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-							}>Hi, I'm Filip. I am a full-stack developer.</div>
+							}>Hello, I'm Filip.</div>
+
+							<div className={"introductionText " + 
+							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
+							}>I am a full stack developer.</div>
 
 							<div className={"introductionText " + 
 							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")

@@ -17,6 +17,10 @@ export default class Misc extends React.Component {
 			currentColour: appThemeCookie ? appThemeCookie : { r: 100, g: 181, b: 246, hex: "#64b5f6" }
 		}
 
+		if(appThemeCookie) {
+			cookies.set("app-theme", this.state.currentColour,  { path: "/", maxAge: 2600000, sameSite: true });
+		}
+
 		this.updateAppTheme(this.state.currentColour.r, this.state.currentColour.g, this.state.currentColour.b);
 	}
 
@@ -36,7 +40,7 @@ export default class Misc extends React.Component {
 
 		this.updateAppTheme(colour.rgb.r, colour.rgb.g, colour.rgb.b);
 
-		cookies.set("app-theme", this.state.currentColour,  { path: "/" });
+		cookies.set("app-theme", this.state.currentColour,  { path: "/", maxAge: 2600000, sameSite: true });
 	}
 
 	render() {
@@ -54,7 +58,7 @@ export default class Misc extends React.Component {
 							<div className={"miscContainer_content miscContainer_text " + 
 							(this.props.currentPage === PAGE.MISC ? "miscContainer_text-visible" : "")
 							}>
-								Currently I'm only interested in full-stack work, I'd also like to expand my app development skills. I am NOT interested in test automation or pure java development at this moment.
+								Currently I'm mainly interested in full stack work but I'd also like to expand my app development skills. I am NOT interested in test automation or pure java development at this moment.
 							</div>
 
 							<div className={"miscContainer_contactInfo " +
