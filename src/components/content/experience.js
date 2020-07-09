@@ -1,5 +1,4 @@
 import { PAGE } from "../../helpers/page-constant";
-
 import React from "react";
 
 import "./experience.scss";

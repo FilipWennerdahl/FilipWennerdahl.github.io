@@ -1,9 +1,7 @@
-import { PICTURE } from "../../helpers/picture-constant";
 import { PAGE } from "../../helpers/page-constant";
-
-import ProfilePicture from "../../resources/images/profile-picture.jpg";
+import { PICTURE } from "../../helpers/picture-constant";
 import CasualPicture from "../../resources/images/casual-picture.jpg";
-
+import ProfilePicture from "../../resources/images/profile-picture.jpg";
 import React from "react";
 
 import "./introduction.scss";

@@ -1,9 +1,9 @@
-import { PAGE } from "../helpers/page-constant"
 import { KEY } from "../helpers/keycode-constants"
+import { PAGE } from "../helpers/page-constant"
+import { Swipeable } from 'react-swipeable'
 import MainContent from "./main-content";
 import React from "react";
 import TopBar from "./top-bar";
-import { Swipeable } from 'react-swipeable'
 
 import "./app-container.scss"
 

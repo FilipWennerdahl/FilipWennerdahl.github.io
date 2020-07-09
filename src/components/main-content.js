@@ -1,12 +1,10 @@
 import { PAGE } from "../helpers/page-constant";
-
 import Experience from "./content/experience";
 import Games from "./content/games";
 import Introduction from "./content/introduction";
 import Misc from "./content/misc";
 import React from "react";
 import Skills from "./content/skills";
-
 
 import "./main-content.scss"
 

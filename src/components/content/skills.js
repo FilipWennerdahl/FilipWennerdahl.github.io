@@ -1,7 +1,9 @@
 import { PAGE } from "../../helpers/page-constant";
+import React from "react";
 
 import AngularLogo from "../../resources/icons/angular.svg";
 import AppiumLogo from "../../resources/icons/appium.svg";
+import ClojureLogo from "../../resources/icons/clojure.svg";
 import CPlusPlusLogo from "../../resources/icons/c-plus-plus.svg";
 import CSharpLogo from "../../resources/icons/csharp.svg";
 import DotNetLogo from "../../resources/icons/dotnet.svg";
@@ -13,16 +15,12 @@ import JavaLogo from "../../resources/icons/java.svg";
 import JavaScriptLogo from "../../resources/icons/javascript.svg";
 import JqueryLogo from "../../resources/icons/jquery.svg";
 import NodeLogo from "../../resources/icons/node.svg";
+import PrologLogo from "../../resources/icons/prolog.svg";
 import ReactLogo from "../../resources/icons/react.svg";
 import SeleniumLogo from "../../resources/icons/selenium.svg";
 import SqlLogo from "../../resources/icons/sql.svg";
-import PrologLogo from "../../resources/icons/prolog.svg";
-import ClojureLogo from "../../resources/icons/clojure.svg";
 
 import "./skills.scss";
-
-import React from "react";
-
 
 export default class Skills extends React.Component {
 	render() {
