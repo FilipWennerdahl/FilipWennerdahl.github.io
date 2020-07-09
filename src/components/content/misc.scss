@@ -1,0 +1,112 @@
+.misc {
+	&_content {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.miscContainer {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+
+	text-align: start;
+	margin-bottom: 2em;
+	padding-left: 10vw;
+	padding-right: 10vw;
+
+	&_header {
+		font-family: BebasNeue-thin;
+		letter-spacing: 0.1em;
+		
+	}
+
+	&_contactInfo {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		align-items: center;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		margin-top: 1em;
+		margin-bottom: 1em;
+
+		transition: transform 0.3s;
+		transform-origin: left;
+		transition-delay: 0.2s;
+		transform: scaleX(0);
+		
+		&-visible {
+			transform: scaleX(1);
+		}
+
+		* {
+			margin-bottom: 0 !important;
+		}
+
+		:first-child {
+			display: flex;
+			align-items: center;
+			margin-right: 1em;
+		}
+
+		i {
+			margin-right: 0.5em !important;
+			font-size: 1.5em;
+		}
+	}
+
+	&_content {
+		&-center {
+			align-self: center;
+		}
+
+		&-disclaimer {
+			margin-bottom: 0 !important;
+
+			background: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,1) 95%);
+			border-radius: 0.5em;
+			padding: 0.5em;
+		}
+	}
+
+	&_text {
+		transition: transform 0.3s;
+		transform-origin: top;
+		transition-delay: 0.2s;
+		transform: scaleY(0);
+
+		&-visible {
+			transform: scaleY(1);
+		}
+	}
+}
+
+#contactInfoContainer {
+	background: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,1) 90%);
+	border-radius: 0.5em;
+	padding: 0.5em;
+}
+
+.swatches-picker {
+	:first-child {
+		:first-child {
+			position: static !important;
+		}
+
+		:last-child {
+			overflow-y: auto !important;
+		}
+	}
+
+	span > div {
+		border: black solid 1px !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.swatches-picker {
+		width: 90vw !important;
+	}
+}

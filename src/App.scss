@@ -1,0 +1,38 @@
+:root {
+	// --app-theme: rgba(100, 181, 246, 0.3);
+	// --app-theme-button: rgba(100, 181, 246, 0.13);
+	// --app-theme-button-hover: rgba(100, 181, 246, 0.27);
+	// --app-theme-link: rgba(100, 181, 246, 0.27);
+
+	--app-theme: rgba(255, 255, 255, 0.3);
+	--app-theme-button: rgba(255, 255, 255, 0.13);
+	--app-theme-button-hover: rgba(255, 255, 255, 0.27);
+	--app-theme-border: rgba(255, 255, 255, 1);
+}
+
+body {
+	overflow-y: scroll;
+}
+
+.App {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+
+.italic {
+	font-style: italic;
+}
+
+a {
+	color: black;
+}
+
+h5 {
+	font-family: BebasNeue-thin;
+	font-size: 1.2em;
+	letter-spacing: 0.05em;
+	text-align: start;
+}

@@ -1,0 +1,170 @@
+.skills {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	.threeStars, .oneStar {
+		padding-right: 10%;
+
+		.popInFirst {
+			padding-right: 1em;
+		}
+
+		.skillLevel_container {
+			justify-content: flex-end;
+		}
+
+		.skillList {
+			justify-content: flex-end;
+			background: rgb(0,0,0);
+			background: linear-gradient(270deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%);
+			padding-right: 1em;
+
+			&_container {
+				margin-left: 5em;
+			}
+		}
+	}
+
+	.twoStars {
+		padding-left: 10%;
+
+		.popInFirst {
+			padding-left: 1em;
+		}
+
+		.skillLevel_container {
+			justify-content: flex-start;
+		}
+
+		.skillList {
+			justify-content: flex-start;
+			background: rgb(0,0,0);
+			background: linear-gradient(90deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%);
+			padding-left: 1em;
+
+			&_container {
+				margin-right: 5em;
+			}
+		}
+
+		.paintBG{
+			left: 0;
+			width: 46em;
+		}
+	}
+
+	.skillLevel {
+		display: flex;
+		flex-direction: column;
+
+		&_container {
+			display: flex;
+		}
+
+		.star {
+			font-size: 2em;
+			margin-left: 0.2em;
+			margin-right: 0.2em;
+			transform: scale(0);
+			transition-delay: 0.3s;
+		}
+	}
+
+	.popInFirst {
+		transition: transform 0.2s;
+		transition-delay: 0.3s !important;
+		transform: scale(1) !important;
+	}
+
+	.popInSecond {
+		transition: transform 0.2s;
+		transform: scale(1) !important;
+		transition-delay: 0.4s !important;
+	}
+
+	.popInThird {
+		transition: transform 0.2s;
+		transition-delay: 0.5s !important;
+		transform: scale(1) !important;
+	}
+}
+
+.skillList {
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 2em;
+	margin-top: 1em;
+
+	&_container {
+		display: flex;
+		flex-direction: column;
+
+		h3 {
+			font-family: BebasNeue-thin;
+
+			i {
+				margin-right: 0.5em;
+			}
+		}
+	}
+}
+
+.skill {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	margin-bottom: 1em;
+
+	img {
+		height: 2em;
+		margin-left: 0.3em;
+		user-select: none;
+	}
+
+	&-jquery img {
+		height: 1.6em;
+	}
+
+	&-html i {
+		font-size: 2em;
+		margin-left: 0.3em;
+	}
+
+	&-css i {
+		font-size: 1.7em;
+		margin-left: 0.4em;
+	}
+
+	&-apple i {
+		font-size: 1.7em;
+		margin-left: 0.4em;
+	}
+
+	&-windows i {
+		font-size: 1.6em;
+		margin-left: 0.4em;
+	}
+
+	&-chrome i {
+		font-size: 1.7em;
+		margin-left: 0.4em;
+	}
+
+	&-appium {
+		font-size: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.skillList {
+		&_container {
+			margin-bottom: 1em;
+		}
+	}
+
+	.skillLevel:not(:last-child) {
+		margin-bottom: 1.5em;
+	}
+}

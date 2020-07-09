@@ -1,0 +1,164 @@
+.games {
+	--unity-container-width: 40vw;
+
+	display: flex;
+	flex-direction: column;
+
+	h5 {
+		margin-bottom: 0;
+	}
+
+	&_container {
+		text-align: left;
+		display: flex;
+
+		&-left {
+			justify-content: flex-start;
+			flex-direction: column;
+
+			margin-left: 5vw;
+			margin-right: 15vw;
+		}
+
+		&-right {
+			justify-content: flex-end;
+			flex-direction: column;
+
+			margin-left: 15vw;
+			margin-right: 5vw;
+		}
+		
+		&-left, &-right {
+			background: rgb(0,0,0);
+			background: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,1) 90%);
+			border-radius: 0.5em;
+			padding: 0.5em;
+		}
+
+		&-center {
+			justify-content: center;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 2em;
+		}
+
+		div {
+			&:not(:last-child) {
+				margin-bottom: 1em;
+			}
+		}
+	}
+
+	&_header {
+		display: flex;
+
+		font-family: BebasNeue-thin;
+		font-size: 1.2em;
+		letter-spacing: 0.05em;
+
+		margin-bottom: 1em;
+
+		&-left {
+			justify-content: flex-start;
+			flex-direction: column;
+			text-align: left;
+
+			margin-left: 5vw;
+			margin-right: 10vw;
+		}
+
+		&-right {
+			justify-content: flex-end;
+			flex-direction: column;
+			text-align: right;
+
+			margin-left: 10vw;
+			margin-right: 5vw;
+		}
+	}
+}
+
+.gameText {
+	transition: transform 0.4s;
+	transition-delay: 0.15s;
+	transform: scaleX(0);
+
+	&-visible {
+		transform: scaleX(1);
+	}
+}
+
+.gameText:nth-child(even) {
+	transform-origin: right;
+}
+
+.gameText:nth-child(odd) {
+	transform-origin: left;
+}
+
+.unityContainer {
+	box-shadow: 0px 0px 1px 2px var(--app-theme-border);
+	text-align: center;
+	
+	&-unLoaded {
+		cursor: pointer;
+	}
+
+	i {
+		position: relative;
+	}
+
+	&-portrait i {
+		top: calc(50% - 7.5vh);
+		font-size: 15vh;
+	}
+
+	&-landscape i {
+		top: calc(50% - 5vw);
+		font-size: 7.5vw;
+	}
+}
+
+#spaceGame {
+	background-image: url(../../resources/images/space-game-blur.png);
+	background-size: cover;
+	
+	i {
+		color: rgba(200, 200, 200, 0.8);
+	}
+}
+
+#towerOfHanoi {
+	background-image: url(../../resources/images/tower-of-hanoi-blur.png);
+	background-size: cover;
+
+	i {
+		color: rgba(50, 50, 50, 0.8);
+	}
+}
+
+#videoBotson {
+	width: var(--unity-container-width);
+	height: calc(var(--unity-container-width) / 1.78);
+
+	box-shadow: 0px 0px 1px 2px var(--app-theme-border);
+}
+
+@media only screen and (max-width: 1000px) {
+	.games {
+		--unity-container-width: 80vw;
+
+		&_container {
+			margin-left: 5vw !important;
+			margin-right: 5vw !important;
+		}
+	}
+
+	.unityContainer {
+		&-landscape i {
+			top: calc(50% - 12vw);
+			font-size: 20vw;
+		}
+	}
+}

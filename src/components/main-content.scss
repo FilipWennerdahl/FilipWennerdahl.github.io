@@ -1,0 +1,108 @@
+.mainContent {
+	margin-bottom: 20px;
+	width: 100%;
+	height: 100%;
+	margin-top: 6em;
+
+	background-color: rgb(255, 255, 255);
+
+	display: flex;
+
+	&_middle {
+		flex-grow: 3;
+		position: relative;
+	}
+
+	&_edge {
+		background-color: rgb(255, 255, 255);
+		flex-grow: 1;
+	}
+}
+
+.contentContainer {
+	transition: left 0.3s ease-in, right 0.3s ease-in, transform 0.3s;
+	position: absolute;
+
+	&-current {
+		left: 0;
+		right: 0;
+		transform: scaleX(1);
+	}
+
+	&-left {
+		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s;
+		left: -15vw;
+		right: 15vw;
+		transform: scaleX(0);
+		transform-origin: left;
+	}
+
+	&-right {
+		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s;
+		left: 15vw;
+		right: -15vw;
+		transform: scaleX(0);
+		transform-origin: right;
+	}
+
+	&-wasLeft {
+		transform-origin: left;
+	}
+
+	&-wasRight {
+		transform-origin: right;
+	}
+}
+
+.content {
+	margin-bottom: 3em;
+
+	&_header {
+		text-align: left;
+		padding-left: 20%;
+		font-family: BebasNeue;
+	}
+}
+
+.blinderEffect {
+	transition: transform 0.2s;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition-delay: 0.3s;
+
+	&-active {
+		transform: scaleY(1);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.mainContent {
+		margin-top: 4em;
+
+		&_edge {
+			flex-grow: 0;
+		}
+	}
+
+	.contentContainer {
+		&-left {
+			left: -00;
+			right: 0;
+		}
+	
+		&-right {
+			left: 0;
+			right: 0;
+		}
+	}
+}
+
+@font-face {
+	font-family: BebasNeue;
+	src: url(../resources/fonts/BebasNeue-Regular.otf);
+}
+
+@font-face {
+	font-family: BebasNeue-thin;
+	src: url(../resources/fonts/BebasNeue-Book.otf);
+}

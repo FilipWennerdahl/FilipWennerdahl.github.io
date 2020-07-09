@@ -1,0 +1,148 @@
+.introduction {
+	padding-left: 2em;
+	padding-right: 2em;
+
+	.content_header {
+		margin-bottom: 2em;
+	}
+
+	&_content {
+		display: flex;
+		flex-direction: column;
+
+		font-family: BebasNeue-thin;
+		font-size: 1.5em;
+		letter-spacing: 0.1em;
+	}
+}
+
+.introductionRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&:not(:last-child) {
+		margin-bottom: 2em;
+	}
+
+	&-site {
+		margin-bottom: 1em;
+
+		h4 {
+			margin: 0;
+		}
+	}
+
+	&-list {
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	&_content {
+		background: rgb(0,0,0);
+		background: linear-gradient(90deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%);
+		border-radius: 0.5em;
+		padding: 0.5em;
+
+		.introductionText {
+			text-align: start;
+			margin-right: 2em;
+			transition: transform 0.2s;
+			transition-delay: 0.2s;
+			transform: scaleX(0);
+			transform-origin: left;
+
+			&:not(:last-child) {
+				margin-bottom: 1em;
+			}
+
+			&-visible {
+				transform: scaleX(1);
+			}
+		}
+	}
+
+	&_picture {
+		font-size: 0.8em;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		cursor: pointer;
+
+		.pictureButton {
+			display: inline-block;
+			cursor: pointer;
+
+			&-selected {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.profilePictureContainer {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 0.5em;
+	perspective: 1000px;
+
+	.profilePicture {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		transition: transform 0.5s;
+		transform-style: preserve-3d;
+
+		&-flipped {
+			transform: rotateY(180deg);
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 0.5em;
+			border: var(--app-theme-border) solid 2px;
+			position: absolute;
+			transform: translateX(-50%);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		&_business {
+			transform: translateX(-50%) rotateY(180deg) !important;
+		}
+	}
+}
+
+.siteInfo {
+	display: inline-block;
+
+	text-align: start;
+	margin-right: 2em;
+
+	background: rgb(0,0,0);
+	background: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%);
+	border-radius: 0.5em;
+	padding: 0.5em;
+}
+
+@media only screen and (max-width: 1000px) {
+	.introductionRow {
+		flex-wrap: wrap;
+
+		&-info, &-site {
+			justify-content: center !important;
+		}
+
+		&_content {
+			margin-bottom: 2em;
+		}
+	}
+
+	.siteInfo {
+		margin-right: 0 !important;
+	}
+}
