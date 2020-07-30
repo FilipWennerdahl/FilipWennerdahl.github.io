@@ -52,6 +52,7 @@
 
 	&_header {
 		display: flex;
+		justify-content: flex-start;
 
 		font-family: BebasNeue-thin;
 		font-size: 1.2em;
@@ -60,21 +61,11 @@
 		margin-bottom: 1em;
 
 		&-left {
-			justify-content: flex-start;
-			flex-direction: column;
-			text-align: left;
-
 			margin-left: 5vw;
-			margin-right: 10vw;
 		}
 
 		&-right {
-			justify-content: flex-end;
-			flex-direction: column;
-			text-align: right;
-
-			margin-left: 10vw;
-			margin-right: 5vw;
+			margin-left: 15vw;
 		}
 	}
 }
@@ -152,6 +143,12 @@
 		&_container {
 			margin-left: 5vw !important;
 			margin-right: 5vw !important;
+		}
+
+		&_header {
+			&-right {
+				margin-left: 5vw;
+			}
 		}
 	}
 

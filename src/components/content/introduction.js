@@ -70,7 +70,7 @@ export default class Introduction extends React.Component {
 						</div>
 					</div>
 
-					<div className="introductionRow introductionRow-site">
+					<div className="introductionRow introductionRow-site introductionRow-header">
 						<h4>Site info</h4>
 					</div>
 

@@ -7,6 +7,7 @@ import ClojureLogo from "../../resources/icons/clojure.svg";
 import CPlusPlusLogo from "../../resources/icons/c-plus-plus.svg";
 import CSharpLogo from "../../resources/icons/csharp.svg";
 import DotNetLogo from "../../resources/icons/dotnet.svg";
+import ElasticsearchLogo from "../../resources/icons/elasticsearch.svg";
 import GAPLogo from "../../resources/icons/google-app-engine.svg";
 import GCPLogo from "../../resources/icons/google-cloud-platform.svg";
 import GitLogo from "../../resources/icons/git.svg";
@@ -189,6 +190,11 @@ export default class Skills extends React.Component {
 								<div className="skill skill-jquery">
 									jQuery
 									<img src={JqueryLogo} alt="jquery"></img>
+								</div>
+
+								<div className="skill skill-elasticsearch">
+									elasticsearch
+									<img src={ElasticsearchLogo} alt="elasticsearch"></img>
 								</div>
 							</div>
 						</div>

@@ -132,11 +132,21 @@
 }
 
 @media only screen and (max-width: 1000px) {
+	.content {
+		&_header {
+			margin-bottom: 1em !important;
+		}
+	}
+
 	.introductionRow {
 		flex-wrap: wrap;
 
 		&-info, &-site {
 			justify-content: center !important;
+		}
+
+		&-header {
+			margin-bottom: 1em !important;
 		}
 
 		&_content {
