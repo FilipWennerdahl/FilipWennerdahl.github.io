@@ -46,7 +46,9 @@ export default class Misc extends React.Component {
 	render() {
 		return(
 			<div className="misc content">
-				<h1 className="content_header">Contact and settings</h1>
+				<div className="leftFlex">
+					<h1 className="content_header">Contact and settings</h1>
+				</div>
 
 				<div className="misc_content">
 					<div className="miscContainer">

@@ -23,7 +23,9 @@ export default class Introduction extends React.Component {
 	render() {
 		return (
 			<div className="introduction content">
-				<h1 className="content_header">Introduction</h1>
+				<div className="leftFlex">
+					<h1 className="content_header">Introduction</h1>
+				</div>
 
 				<div className="introduction_content">
 					<div className="introductionRow introductionRow-info">
@@ -76,13 +78,14 @@ export default class Introduction extends React.Component {
 
 					<div className="introductionRow introductionRow-list">
 						<div className="siteInfo">
-							Tech:
+							Technologies:
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
 								<li>
 									React
 								</li>
+
 								<li>
 									Scss
 								</li>

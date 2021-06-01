@@ -12,6 +12,10 @@ export default class MainContent extends React.Component {
 	previousPage = null;
 	newPage = this.props.currentPage;
 
+	componentDidMount() {
+		document.title = "Portfolio: Filip Wennerdahl"
+	}
+
 	shouldComponentUpdate(newProps) {
 		if (newProps.currentPage !== this.props.currentPage) {
 			this.previousPage = this.props.currentPage;

@@ -80,7 +80,9 @@ export default class Games extends React.Component {
 	render() {
 		return(
 			<div className="games content">
-				<h1 className="content_header">Games</h1>
+				<div className="leftFlex">
+					<h1 className="content_header">Games</h1>
+				</div>
 
 				<div className="games_header games_header-left">
 					<h5>Space Game</h5>

@@ -25,9 +25,24 @@ a {
 	color: black;
 }
 
-h5 {
+h4 {
 	font-family: BebasNeue-thin;
 	font-size: 1.2em;
 	letter-spacing: 0.05em;
 	text-align: start;
+	font-weight: normal;
+}
+
+.leftFlex {
+	display: flex;
+
+	h1 {
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.leftFlex {
+		justify-content: center;
+	}
 }

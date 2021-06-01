@@ -7,10 +7,12 @@ export default class Experience extends React.Component {
 	render() {
 		return(
 			<div className="experience content">
-				<h1 className="content_header">Experience</h1>
+				<div className="leftFlex">
+					<h1 className="content_header">Experience</h1>
+				</div>
 
 				<div className="experience_content experience_content-left">
-					<h5>Employment</h5>
+					<h4>Employment</h4>
 				</div>
 
 				<div className="experience_content experience_content-left experienceSection">
@@ -26,7 +28,7 @@ export default class Experience extends React.Component {
 
 					<div className="experienceSection_content">
 						<div className={"textContainer "  + (this.props.currentPage === PAGE.EXPERIENCE ? "textContainer-visible" : "")}>
-							I am currently employed as a full stack developer where my assignments include everything from developing the front- and back-end of our web application as well as our native student clients. The front-end technologies are mainly comprised of JavaScript using AngularJS (we are currently in the process of moving to the latest version of Angular), the back-end of Go using app engine and GCP as our host. The back-end work also includes maintaining and developing new REST APIs. Developing the native student clients includes working with C++, Objective-C++, Electron and chromeOS since we support Mac, PC, Chromebook and iOS. Though, the main bulk of work in the client is AngularJS just like the web application.
+							I am currently employed as a full stack developer where my assignments include everything from developing the front- and back-end of our web application as well as our native client application. The front-end technologies are mainly comprised of JavaScript using a hybrid AngularJS/Angular app (we are currently in the process of moving to the latest version of Angular), the back-end of Go using App Engine and GCP as our host. The back-end work also includes maintaining and developing new REST APIs. Developing the native student clients includes working with C++, Objective-C++, Electron and chromeOS since we support Mac, PC, Chromebook and iOS. Our latest addition is an Android app using Kotlin as our native interface and a WebView to host the core application. I did the main specification and research for the Android project.
 						</div>
 					</div>
 				</div>
@@ -50,7 +52,7 @@ export default class Experience extends React.Component {
 				</div>
 
 				<div className="experience_content experience_content-left">
-					<h5>Education</h5>
+					<h4>Education</h4>
 				</div>
 
 				<div className="experience_content experience_content-left experienceSection">

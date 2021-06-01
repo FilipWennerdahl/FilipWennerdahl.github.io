@@ -27,7 +27,9 @@ export default class Skills extends React.Component {
 	render() {
 		return (
 			<div className="skills content">
-				<h1 className="content_header">Skills</h1>
+				<div className="leftFlex">
+					<h1 className="content_header">Skills</h1>
+				</div>
 
 				<div className="skillLevel threeStars">
 					<div className="skillLevel_container">

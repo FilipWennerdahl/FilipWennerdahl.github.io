@@ -58,9 +58,12 @@
 	margin-bottom: 3em;
 
 	&_header {
-		text-align: left;
-		padding-left: 20%;
+		padding: 0 1em;
+		margin-left: 5em;
 		font-family: BebasNeue;
+		border-bottom: 1px solid;
+		border-image-slice: 1;
+		border-image-source: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 100%);
 	}
 }
 
@@ -76,6 +79,12 @@
 }
 
 @media only screen and (max-width: 1000px) {
+	.content {
+		&_header {
+			margin-left: 0;
+		}
+	}
+
 	.mainContent {
 		margin-top: 4em;
 
