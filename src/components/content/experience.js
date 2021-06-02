@@ -128,14 +128,14 @@ export default class Experience extends React.Component {
 
 				{employtmentItems}
 
-				<div className="experience_content experience_content-left">
+				<div className={`experience_content  experience_content-${ educationsIndexing === 1 ? "left" : "right"}`}>
 					<h4>Education</h4>
 				</div>
 
 				{educationItems}
 
-				<div className="experience_content experience_content-right">
-					<h5>Projects</h5>
+				<div className={`experience_content  experience_content-${ projectsIndexing === 1 ? "left" : "right"}`}>
+					<h4>Projects</h4>
 				</div>
 
 				{projectItems}
