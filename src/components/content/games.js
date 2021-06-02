@@ -85,7 +85,7 @@ export default class Games extends React.Component {
 				</div>
 
 				<div className="games_header games_header-left">
-					<h5>Space Game</h5>
+					<h4>Space Game</h4>
 				</div>
 
 				<div className="games_container games_container-left">
@@ -125,7 +125,7 @@ export default class Games extends React.Component {
 				</div>
 
 				<div className="games_header games_header-right">
-					<h5>Tower of Hanoi</h5>
+					<h4>Tower of Hanoi</h4>
 				</div>
 
 				<div className="games_container games_container-right">
@@ -159,7 +159,7 @@ export default class Games extends React.Component {
 				</div>
 
 				<div className="games_header games_header-left">
-					<h5>Botson & FindOS</h5>
+					<h4>Botson & FindOS</h4>
 				</div>
 
 				<div className="games_container games_container-left">

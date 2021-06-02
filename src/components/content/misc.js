@@ -53,7 +53,7 @@ export default class Misc extends React.Component {
 				<div className="misc_content">
 					<div className="miscContainer">
 						<div className="miscContainer_header">
-							<h5>Contact Information</h5>
+							<h4>Contact Information</h4>
 						</div>
 
 						<div id="contactInfoContainer">
@@ -100,7 +100,7 @@ export default class Misc extends React.Component {
 
 					<div className="miscContainer">
 						<div className="miscContainer_header miscContainer_header">
-							<h5>Colour Theme Picker</h5>
+							<h4>Colour Theme Picker</h4>
 						</div>
 
 						<div className="miscContainer_content miscContainer_content-center miscContainer_content-disclaimer">
