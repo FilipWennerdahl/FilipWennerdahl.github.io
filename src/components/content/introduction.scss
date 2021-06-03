@@ -9,10 +9,6 @@
 	&_content {
 		display: flex;
 		flex-direction: column;
-
-		font-family: BebasNeue-thin;
-		font-size: 1.5em;
-		letter-spacing: 0.1em;
 	}
 }
 
@@ -51,10 +47,8 @@
 			transition-delay: 0.2s;
 			transform: scaleX(0);
 			transform-origin: left;
-
-			&:not(:last-child) {
-				margin-bottom: 1em;
-			}
+			margin-bottom: 1em;
+			margin-left: 1em;
 
 			&-visible {
 				transform: scaleX(1);
@@ -129,6 +123,30 @@
 	padding: 0.5em;
 
 	white-space: nowrap;
+
+	h3 {
+		margin: 0;
+		text-align: center;
+	}
+
+	ul {
+		margin: 0.75em 0;
+		padding: 0 1em;
+		list-style: none;
+	}
+
+	li::before { 
+		content: "";
+		border-color: transparent #111;
+		border-style: solid;
+		border-width: 0.35em 0 0.35em 0.45em;
+		display: block;
+		height: 0;
+		width: 0;
+		left: -1em;
+		top: 1em;
+		position: relative;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
@@ -136,6 +154,10 @@
 		&_header {
 			margin-bottom: 1em !important;
 		}
+	}
+
+	.introductionText {
+		margin-left: 0;
 	}
 
 	.introductionRow {
@@ -158,5 +180,6 @@
 	.siteInfo {
 		margin-left: 1vw !important;
 		margin-right: 1vw !important;
+		margin-bottom: 1em;
 	}
 }

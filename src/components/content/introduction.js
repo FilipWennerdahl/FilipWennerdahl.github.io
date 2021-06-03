@@ -32,19 +32,17 @@ export default class Introduction extends React.Component {
 						<div className="introductionRow_content">
 							<div className={"introductionText " + 
 							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-							}>Hello, I'm Filip.</div>
+							}>
+								<h3>Hello, I'm Filip.</h3>
+							</div>
 
 							<div className={"introductionText " + 
 							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-							}>I am a full stack developer.</div>
-
-							<div className={"introductionText " + 
-							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-							}>You have found my digital CV & Portfoilo (lucky you).</div>
+							}>I'm a full stack developer and you've have found my digital CV & Portfoilo.</div>
 							
 							<div className={"introductionText " + 
 							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-							}>Here you can find my skills, experience and some of the games I've created.</div>
+							}>Here you can find my skills, experiences and some of the games I've created.</div>
 							
 							<div className={"introductionText " + 
 							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
@@ -78,7 +76,7 @@ export default class Introduction extends React.Component {
 
 					<div className="introductionRow introductionRow-list">
 						<div className="siteInfo">
-							Technologies:
+							<h3>Technologies</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
@@ -117,7 +115,7 @@ export default class Introduction extends React.Component {
 						</div>
 
 						<div className="siteInfo">
-							Features:
+							<h3>Features</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
@@ -132,7 +130,7 @@ export default class Introduction extends React.Component {
 						</div>
 
 						<div className="siteInfo">
-							Navigation:
+							<h3>Navigation</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
