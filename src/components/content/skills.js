@@ -46,7 +46,7 @@ export default class Skills extends React.Component {
 						} aria-hidden="true"></i>
 					</div>
 
-					<div className="skillList">
+					<div className="skillList bold">
 						<div className="skillList_container">
 							<h3>
 								<i className="fa fa-laptop" aria-hidden="true"></i>
@@ -143,7 +143,7 @@ export default class Skills extends React.Component {
 						} aria-hidden="true"></i>
 					</div>
 
-					<div className="skillList">
+					<div className="skillList bold">
 						<div className="skillList_container">
 							<h3>
 								<i className="fa fa-laptop" aria-hidden="true"></i>
@@ -236,7 +236,7 @@ export default class Skills extends React.Component {
 						} aria-hidden="true"></i>
 					</div>
 
-					<div className="skillList">
+					<div className="skillList bold">
 						<div className="skillList_container">
 							<h3>
 								<i className="fa fa-laptop" aria-hidden="true"></i>
