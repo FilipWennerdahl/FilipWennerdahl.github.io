@@ -15,6 +15,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: rgba(255, 255, 255, 0.85);
+	font-family: OpenSans-Regular;
 }
 
 .italic {
@@ -46,4 +47,19 @@ h4 {
 	.leftFlex {
 		justify-content: center;
 	}
+}
+
+@font-face {
+	font-family: BebasNeue;
+	src: url(resources/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+	font-family: BebasNeue-thin;
+	src: url(resources/fonts/BebasNeue-Book.ttf);
+}
+
+@font-face {
+	font-family: OpenSans-Regular;
+	src: url(resources/fonts/OpenSans-Regular.ttf);
 }
