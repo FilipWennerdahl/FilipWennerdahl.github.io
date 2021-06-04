@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5975751c13bfc8346327a2f6f704fe01",
+    "revision": "86ac8e45ffdf37857498098e538bc56c",
     "url": "/index.html"
   },
   {
-    "revision": "d0909d0fde3f5329735d",
+    "revision": "4e75efdc445a2aa830f3",
     "url": "/static/css/2.fa349ff9.chunk.css"
   },
   {
-    "revision": "4a55572b96759c531550",
-    "url": "/static/css/main.7edc0755.chunk.css"
+    "revision": "d31fbc535a3c290ec049",
+    "url": "/static/css/main.60860544.chunk.css"
   },
   {
-    "revision": "d0909d0fde3f5329735d",
-    "url": "/static/js/2.5702774a.chunk.js"
+    "revision": "4e75efdc445a2aa830f3",
+    "url": "/static/js/2.09927af4.chunk.js"
   },
   {
     "revision": "b1e1af3d04fcf4054bede355b63cfc48",
-    "url": "/static/js/2.5702774a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.09927af4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4a55572b96759c531550",
-    "url": "/static/js/main.6af61b2a.chunk.js"
+    "revision": "d31fbc535a3c290ec049",
+    "url": "/static/js/main.b9bf6eb4.chunk.js"
   },
   {
     "revision": "4f2b1704eab49d50853b",
@@ -60,16 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/casual-picture.a5e7c65d.jpg"
   },
   {
-    "revision": "f7d99850dbab3f472121c071daafcf1a",
-    "url": "/static/media/clojure.f7d99850.svg"
-  },
-  {
     "revision": "8e953d44d2ac220e71edaa376212a0f0",
     "url": "/static/media/csharp.8e953d44.svg"
-  },
-  {
-    "revision": "be900a207cd719e4fa172a97abd4d0de",
-    "url": "/static/media/dotnet.be900a20.svg"
   },
   {
     "revision": "63ca3b831e64a718d473cc80647d0572",
@@ -124,16 +116,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jquery.7c4aefc4.svg"
   },
   {
+    "revision": "ced47ea851c7380b302611013e2ec4a0",
+    "url": "/static/media/mono.ced47ea8.svg"
+  },
+  {
     "revision": "16a3218a723fa469b7b4731bbdc7acdd",
     "url": "/static/media/node.16a3218a.svg"
   },
   {
     "revision": "eec65c64cd7deda443de279cdba7a0fe",
     "url": "/static/media/profile-picture.eec65c64.jpg"
-  },
-  {
-    "revision": "0816f1e9687ce463d09a34e4b694887a",
-    "url": "/static/media/prolog.0816f1e9.svg"
   },
   {
     "revision": "1e35b665ff6cca40a8549cd558a9411e",
