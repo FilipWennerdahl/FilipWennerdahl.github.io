@@ -50,18 +50,6 @@
 
 	-webkit-tap-highlight-color: transparent;
 
-	&:hover {
-		background-color: var(--app-theme-button-hover);
-		
-		i {
-			font-size: 2.4em;
-		}
-
-		.icon_small {
-			font-size: 1.9em !important;
-		}
-	}
-
 	&:active {
 		background-color: var(--app-theme-button);
 
@@ -101,6 +89,22 @@
 	topBar {
 		&_container {
 			max-width: 100vw;
+		}
+	}
+}
+
+@media (hover: hover) {
+    .icon {
+		&:hover {
+			background-color: var(--app-theme-button-hover);
+			
+			i {
+				font-size: 2.4em;
+			}
+	
+			.icon_small {
+				font-size: 1.9em !important;
+			}
 		}
 	}
 }
