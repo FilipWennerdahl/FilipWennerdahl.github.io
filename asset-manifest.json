@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.07622c3b.chunk.css",
-    "main.js": "/static/js/main.cf24fa85.chunk.js",
-    "main.js.map": "/static/js/main.cf24fa85.chunk.js.map",
+    "main.css": "/static/css/main.e2285eb8.chunk.css",
+    "main.js": "/static/js/main.b183cfcc.chunk.js",
+    "main.js.map": "/static/js/main.b183cfcc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
     "static/css/2.fa349ff9.chunk.css": "/static/css/2.fa349ff9.chunk.css",
-    "static/js/2.09927af4.chunk.js": "/static/js/2.09927af4.chunk.js",
-    "static/js/2.09927af4.chunk.js.map": "/static/js/2.09927af4.chunk.js.map",
+    "static/js/2.aa535b29.chunk.js": "/static/js/2.aa535b29.chunk.js",
+    "static/js/2.aa535b29.chunk.js.map": "/static/js/2.aa535b29.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9fcb74cadff5d5a1df346aaeb33dddc6.js": "/precache-manifest.9fcb74cadff5d5a1df346aaeb33dddc6.js",
+    "precache-manifest.840c9a953ffbe6516708407e10dcbe8e.js": "/precache-manifest.840c9a953ffbe6516708407e10dcbe8e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fa349ff9.chunk.css.map": "/static/css/2.fa349ff9.chunk.css.map",
-    "static/css/main.07622c3b.chunk.css.map": "/static/css/main.07622c3b.chunk.css.map",
-    "static/js/2.09927af4.chunk.js.LICENSE.txt": "/static/js/2.09927af4.chunk.js.LICENSE.txt",
+    "static/css/main.e2285eb8.chunk.css.map": "/static/css/main.e2285eb8.chunk.css.map",
+    "static/js/2.aa535b29.chunk.js.LICENSE.txt": "/static/js/2.aa535b29.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/OpenSans-Regular.3ed9575d.ttf",
     "static/media/angular.svg": "/static/media/angular.5b2ffffd.svg",
     "static/media/appium.svg": "/static/media/appium.13cbf98b.svg",
@@ -35,13 +35,15 @@
     "static/media/react.svg": "/static/media/react.1e35b665.svg",
     "static/media/selenium.svg": "/static/media/selenium.d7b696ae.svg",
     "static/media/games.scss": "/static/media/tower-of-hanoi-blur.fd0b217f.png",
-    "static/media/sql.svg": "/static/media/sql.f5835a70.svg"
+    "static/media/sql.svg": "/static/media/sql.f5835a70.svg",
+    "static/media/typescript.svg": "/static/media/typescript.2086ed17.svg",
+    "static/media/unity.svg": "/static/media/unity.97bfcf35.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/css/2.fa349ff9.chunk.css",
-    "static/js/2.09927af4.chunk.js",
-    "static/css/main.07622c3b.chunk.css",
-    "static/js/main.cf24fa85.chunk.js"
+    "static/js/2.aa535b29.chunk.js",
+    "static/css/main.e2285eb8.chunk.css",
+    "static/js/main.b183cfcc.chunk.js"
   ]
 }
