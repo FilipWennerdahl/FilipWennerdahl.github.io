@@ -59,6 +59,16 @@
 	border-radius: 2em;
 	padding: 1em 2em 0 2em;
 
+	&_description {
+		margin-bottom: 1.5em;
+
+
+		&-right {
+			text-align: right;
+			width: 100%;
+		}
+	}
+
 	&_container {
 		display: flex;
 		flex-direction: row;
@@ -69,6 +79,7 @@
 			height: 1.8em;
 			margin-left: 0.3em;
 			user-select: none;
+			transform: scaleX(1);
 		}
 	
 		i {
@@ -124,11 +135,17 @@
 @media only screen and (max-width: 600px) {
 	.skillList {
 		background: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%) !important;
-		padding: 1em 0 1em 0 !important;
+		padding: 1em !important;
 
 		&_container {
 			margin: 0 0 1em 0 !important;
 			justify-content: center !important;
+		}
+
+		&_description {
+			&-right {
+				text-align: center;
+			}
 		}
 	}
 

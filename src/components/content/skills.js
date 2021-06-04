@@ -18,11 +18,14 @@ import ReactLogo from "../../resources/icons/react.svg";
 import SeleniumLogo from "../../resources/icons/selenium.svg";
 import SqlLogo from "../../resources/icons/sql.svg";
 import MonoLogo from "../../resources/icons/mono.svg";
+import TSLogo from "../../resources/icons/typescript.svg";
+import UnityLogo from "../../resources/icons/unity.svg";
 
 import "./skills.scss";
 
 class Skill {
 	constructor(name, icon, usingFa, iconStyling) {
+		this.key = Math.random();
 		this.name = name;
 		this.icon = icon;
 		this.usingFa = usingFa;
@@ -51,7 +54,8 @@ const technologies = [
 	new Skill("elasticsearch", ElasticsearchLogo, false, {height: "1.5em"}),
 	new Skill("Angular", AngularLogo, false),
 	new Skill("React", ReactLogo, false),
-	new Skill("Mono framework", MonoLogo, false)
+	new Skill("Mono framework", MonoLogo, false),
+	new Skill("Unity", UnityLogo, false)
 ]
 
 const languages = [
@@ -63,7 +67,8 @@ const languages = [
 	new Skill("C#", CSharpLogo, false),
 	new Skill("SQL", SqlLogo, false),
 	new Skill("C++", CPlusPlusLogo, false),
-	new Skill("Objective-C", "apple", true)
+	new Skill("Objective-C", "apple", true),
+	new Skill("TypeScript", TSLogo, false, {height: "1.4em"}),
 ]
 
 
@@ -71,7 +76,7 @@ export default class Skills extends React.Component {
 	render() {
 		const platformSkills = platforms.map((skill) => {
 			return(
-				<div className="skill">
+				<div key={skill.key} className="skill">
 					<div className="skill_text">
 						{skill.name}
 					</div>
@@ -89,7 +94,7 @@ export default class Skills extends React.Component {
 
 		const technologySkills = technologies.map((skill) => {
 			return(
-				<div className="skill">
+				<div key={skill.key} className="skill">
 					<div className="skill_text">
 						{skill.name}
 					</div>
@@ -107,7 +112,7 @@ export default class Skills extends React.Component {
 
 		const languageSkills = languages.map((skill) => {
 			return(
-				<div className="skill">
+				<div key={skill.key} className="skill">
 					<div className="skill_text">
 						{skill.name}
 					</div>
@@ -137,10 +142,14 @@ export default class Skills extends React.Component {
 						</h3>
 					</div>
 
-					<div className="skillList bold">
-						<div className={"skillList_container blinderEffect " +
+					<div className="skillList">
+						<div className="skillList_description">
+							During my time as a developer I've used several different languages both professionally and in hobby projects.
+						</div>
+
+						<div className={"skillList_container bold blinderEffect " +
 							(this.props.currentPage === PAGE.SKILLS ? "blinderEffect-active" : "")}>
-						{languageSkills}
+							{languageSkills}
 						</div>
 					</div>
 				</div>
@@ -153,8 +162,12 @@ export default class Skills extends React.Component {
 						</h3>
 					</div>
 
-					<div className="skillList bold">
-						<div className={"skillList_container blinderEffect " +
+					<div className="skillList">
+						<div className="skillList_description skillList_description-right">
+								Building websites, applications and games requires a wide array tools and frameworks.  
+						</div>
+
+						<div className={"skillList_container bold blinderEffect " +
 							(this.props.currentPage === PAGE.SKILLS ? "blinderEffect-active" : "")}>
 							{technologySkills}
 						</div>
@@ -169,8 +182,12 @@ export default class Skills extends React.Component {
 						</h3>
 					</div>
 
-					<div className="skillList bold">
-						<div className={"skillList_container blinderEffect " +
+					<div className="skillList">
+						<div className="skillList_description">
+								My expeirence of developing cross platform applications and setting up CI has exposed me to most of the major platforms. 
+						</div>
+
+						<div className={"skillList_container bold blinderEffect " +
 							(this.props.currentPage === PAGE.SKILLS ? "blinderEffect-active" : "")}>
 							{platformSkills}
 						</div>
