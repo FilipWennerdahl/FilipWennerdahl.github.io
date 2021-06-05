@@ -65,7 +65,7 @@ export default class Experience extends React.Component {
 						</div>
 					</div>
 
-					<div className="experienceSection_content">
+					<div className="experienceSection_content containerBGDown">
 						<div className={"textContainer "  + (this.props.currentPage === PAGE.EXPERIENCE ? "textContainer-visible" : "")}>
 							{employment.description}
 						</div>
@@ -87,7 +87,7 @@ export default class Experience extends React.Component {
 						</div>
 					</div>
 
-					<div className="experienceSection_content">
+					<div className="experienceSection_content containerBGDown">
 						<div className={"textContainer "  + (this.props.currentPage === PAGE.EXPERIENCE ? "textContainer-visible" : "")}>
 							{edication.description}
 						</div>
@@ -109,7 +109,7 @@ export default class Experience extends React.Component {
 						</div>
 					</div>
 
-					<div className="experienceSection_content">
+					<div className="experienceSection_content containerBGDown">
 						<div className={"textContainer "  + (this.props.currentPage === PAGE.EXPERIENCE ? "textContainer-visible" : "")}>
 							{project.description}
 						</div>

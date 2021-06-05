@@ -12,7 +12,7 @@
 		}
 
 		.skillList {
-			background: linear-gradient(270deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%);
+			background: var(--app-container-bg-left);
 
 			&_container {
 				margin-left: 5em;
@@ -30,7 +30,7 @@
 		}
 
 		.skillList {
-			background: linear-gradient(90deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%);
+			background: var(--app-container-bg-right);
 
 			&_container {
 				margin-right: 5em;
@@ -134,7 +134,7 @@
 
 @media only screen and (max-width: 600px) {
 	.skillList {
-		background: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%) !important;
+		background: var(--app-container-bg-down) !important;
 		padding: 1em !important;
 
 		&_container {

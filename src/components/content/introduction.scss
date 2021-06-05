@@ -35,8 +35,6 @@
 	}
 
 	&_content {
-		background: rgb(0,0,0);
-		background: linear-gradient(90deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%);
 		border-radius: 0.5em;
 		padding: 0.5em;
 
@@ -117,8 +115,7 @@
 	text-align: start;
 	margin-right: 2em;
 
-	background: rgb(0,0,0);
-	background: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%);
+
 	border-radius: 0.5em;
 	padding: 0.5em;
 
@@ -173,7 +170,7 @@
 
 		&_content {
 			margin-bottom: 2em;
-			background: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,1) 75%);
+			background: var(--app-container-bg-down);
 		}
 	}
 

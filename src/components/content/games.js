@@ -88,7 +88,7 @@ export default class Games extends React.Component {
 					<h4>Space Game</h4>
 				</div>
 
-				<div className="games_container games_container-left">
+				<div className="games_container games_container-left containerBGDown">
 					<div className={"italic gameText " +
 					(this.props.currentPage === PAGE.GAMES ? "gameText-visible" : "")
 					}>
@@ -128,7 +128,7 @@ export default class Games extends React.Component {
 					<h4>Tower of Hanoi</h4>
 				</div>
 
-				<div className="games_container games_container-right">
+				<div className="games_container games_container-right containerBGDown">
 					<div className={"gameText " +
 					(this.props.currentPage === PAGE.GAMES ? "gameText-visible" : "")
 					}>
@@ -148,7 +148,7 @@ export default class Games extends React.Component {
 					</div>
 				</div>
 
-				<div className="games_container games_container-center ">
+				<div className="games_container games_container-center">
 						<div id="towerOfHanoi" className={"unityContainer unityContainer-landscape " +
 						(!this.state.towerOfHanoiLoaded ? "unityContainer-unLoaded" : "")} onClick={this.loadTowerOfHanoiGame}
 						style={this.state.towerOfHanoiStyle}>
@@ -162,7 +162,7 @@ export default class Games extends React.Component {
 					<h4>Botson & FindOS</h4>
 				</div>
 
-				<div className="games_container games_container-left">
+				<div className="games_container games_container-left containerBGDown">
 					<div className={"gameText " +
 					(this.props.currentPage === PAGE.GAMES ? "gameText-visible" : "")
 					}>

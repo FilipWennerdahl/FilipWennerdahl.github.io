@@ -56,7 +56,7 @@ export default class Misc extends React.Component {
 							<h4>Contact Information</h4>
 						</div>
 
-						<div id="contactInfoContainer">
+						<div id="contactInfoContainer" className="containerBGDown">
 							<div className={"miscContainer_content miscContainer_text " + 
 							(this.props.currentPage === PAGE.MISC ? "miscContainer_text-visible" : "")
 							}>
@@ -103,7 +103,7 @@ export default class Misc extends React.Component {
 							<h4>Colour Theme Picker</h4>
 						</div>
 
-						<div className="miscContainer_content miscContainer_content-center miscContainer_content-disclaimer">
+						<div className="miscContainer_content miscContainer_content-center miscContainer_content-disclaimer containerBGDown">
 								In choosing a colour you accept to store a cookie with the app theme information.
 						</div>
 

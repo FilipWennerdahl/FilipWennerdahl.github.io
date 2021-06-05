@@ -29,7 +29,7 @@ export default class Introduction extends React.Component {
 
 				<div className="introduction_content">
 					<div className="introductionRow introductionRow-info introductionRow-mb">
-						<div className="introductionRow_content">
+						<div className="introductionRow_content containerBGRight">
 							<div className={"introductionText " + 
 							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
 							}>
@@ -75,7 +75,7 @@ export default class Introduction extends React.Component {
 					</div>
 
 					<div className="introductionRow introductionRow-list">
-						<div className="siteInfo">
+						<div className="siteInfo containerBGDown">
 							<h3>Technologies</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
@@ -114,7 +114,7 @@ export default class Introduction extends React.Component {
 							</ul>
 						</div>
 
-						<div className="siteInfo">
+						<div className="siteInfo containerBGDown">
 							<h3>Features</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
@@ -129,7 +129,7 @@ export default class Introduction extends React.Component {
 							</ul>
 						</div>
 
-						<div className="siteInfo">
+						<div className="siteInfo containerBGDown">
 							<h3>Navigation</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
