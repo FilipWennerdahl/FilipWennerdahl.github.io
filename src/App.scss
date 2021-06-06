@@ -3,9 +3,9 @@
 	--app-theme-button: rgba(255, 255, 255, 0.13);
 	--app-theme-button-hover: rgba(255, 255, 255, 0.27);
 	--app-theme-border: rgba(255, 255, 255, 1);
-	--app-container-bg-left: linear-gradient(270deg, var(--app-theme) 0%, rgba(255,255,255,0) 75%);
-	--app-container-bg-right: linear-gradient(90deg, var(--app-theme) 0%, rgba(255,255,255,0) 75%);
-	--app-container-bg-down: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,0) 75%);
+	--app-container-bg-left: linear-gradient(270deg, var(--app-theme) 0%, rgba(255,255,255,0) 90%);
+	--app-container-bg-right: linear-gradient(90deg, var(--app-theme) 0%, rgba(255,255,255,0) 90%);
+	--app-container-bg-down: linear-gradient(180deg, var(--app-theme) 0%, rgba(255,255,255,0) 90%);
 }
 
 body {
