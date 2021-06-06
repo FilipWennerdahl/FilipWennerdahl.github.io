@@ -14,7 +14,7 @@ export default class TopBar extends React.Component {
 
 	componentDidMount() {
 		window.onscroll = () => {
-		  if(window.pageYOffset === 0) {
+		  if(window.pageYOffset < 10) {
 			this.setState({
 				topOfPage: true,
 			});

@@ -5,7 +5,7 @@
 	padding-top: 3px;
 	padding-bottom: 3px;
 
-	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0);
 
 	display: flex;
 	align-items: center;
@@ -14,10 +14,11 @@
 	position: fixed;
 	z-index: 2;
 
-	transition: border-bottom 0.1s;
-	border-bottom: white solid 1px;
+	transition: border-bottom 0.15s, background-color 0.15s;
+	border-bottom: rgba(255, 255, 255, 0) solid 1px;
 
 	&-floating {
+		background-color: rgba(255, 255, 255, 1);
 		border-bottom: black solid 1px;
 	}
 

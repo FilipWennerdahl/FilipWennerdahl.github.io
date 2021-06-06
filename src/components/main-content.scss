@@ -4,8 +4,6 @@
 	height: 100%;
 	margin-top: 6em;
 
-	background-color: rgb(255, 255, 255);
-
 	display: flex;
 
 	&_middle {
@@ -14,35 +12,37 @@
 	}
 
 	&_edge {
-		background-color: rgb(255, 255, 255);
 		flex-grow: 1;
 	}
 }
 
 .contentContainer {
-	transition: left 0.3s ease-in, right 0.3s ease-in, transform 0.3s;
+	transition: left 0.3s ease-in, right 0.3s ease-in, transform 0.3s, opacity 0.2s;
 	position: absolute;
 
 	&-current {
 		left: 0;
 		right: 0;
 		transform: scaleX(1);
+		opacity: 1;
 	}
 
 	&-left {
-		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s;
+		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s, opacity 0.2s;
 		left: -15vw;
 		right: 15vw;
 		transform: scaleX(0);
 		transform-origin: left;
+		opacity: 0;
 	}
 
 	&-right {
-		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s;
+		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s, opacity 0.2s;
 		left: 15vw;
 		right: -15vw;
 		transform: scaleX(0);
 		transform-origin: right;
+		opacity: 0;
 	}
 
 	&-wasLeft {
