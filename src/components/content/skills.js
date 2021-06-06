@@ -76,7 +76,7 @@ export default class Skills extends React.Component {
 	render() {
 		const platformSkills = platforms.map((skill) => {
 			return(
-				<div key={skill.key} className="skill">
+				<div key={skill.key} className="skill" title={skill.name}>
 					<div className="skill_text">
 						{skill.name}
 					</div>
@@ -94,7 +94,7 @@ export default class Skills extends React.Component {
 
 		const technologySkills = technologies.map((skill) => {
 			return(
-				<div key={skill.key} className="skill">
+				<div key={skill.key} className="skill" title={skill.name}>
 					<div className="skill_text">
 						{skill.name}
 					</div>
@@ -112,7 +112,7 @@ export default class Skills extends React.Component {
 
 		const languageSkills = languages.map((skill) => {
 			return(
-				<div key={skill.key} className="skill">
+				<div key={skill.key} className="skill" title={skill.name}>
 					<div className="skill_text">
 						{skill.name}
 					</div>
