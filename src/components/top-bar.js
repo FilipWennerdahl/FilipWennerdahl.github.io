@@ -14,21 +14,21 @@ export default class TopBar extends React.Component {
 
 	componentDidMount() {
 		window.onscroll = () => {
-		  if(window.pageYOffset < 10) {
-			this.setState({
-				topOfPage: true,
-			});
-		  } else {
-			this.setState({
-				topOfPage: false,
-			});
-		  };
+			if(window.pageYOffset < 10) {
+				this.setState({
+					topOfPage: true,
+				});
+			} else {
+				this.setState({
+					topOfPage: false,
+				});
+			};
 		};
-	  }
+	}
 	  
-	  componentWillUnmount() {
+	componentWillUnmount() {
 		window.onscroll = null;
-	  }
+	}
 
 	render() {
 		return (
