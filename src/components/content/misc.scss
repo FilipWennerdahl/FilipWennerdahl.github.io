@@ -104,6 +104,11 @@
 }
 
 @media only screen and (max-width: 1000px) {
+	.miscContainer {
+		padding: 0;
+		margin: 0 5vw;
+	}
+
 	.swatches-picker {
 		width: 90vw !important;
 	}

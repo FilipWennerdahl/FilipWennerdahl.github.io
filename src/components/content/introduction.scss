@@ -147,6 +147,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+	.introduction {
+		padding: 0;
+	}
+
 	.content {
 		&_header {
 			margin-bottom: 1em !important;
@@ -169,7 +173,7 @@
 		}
 
 		&_content {
-			margin-bottom: 2em;
+			margin: 0 5vw 2em 5vw;
 			background: var(--app-container-bg-down);
 		}
 	}
