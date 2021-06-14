@@ -71,10 +71,10 @@ export default class Introduction extends React.Component {
 					</div>
 
 					<div className="introductionRow introductionRow-list">
-						<h4>Site info</h4>
+						<h4>Portfolio info</h4>
 
 						<div className="siteInfo containerBGDown">
-							<h3>Technologies</h3>
+							<h3>Frontend Technologies</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
@@ -109,6 +109,25 @@ export default class Introduction extends React.Component {
 						</div>
 
 						<div className="siteInfo containerBGDown">
+							<h3>Backend Technologies</h3>
+							<ul className={"blinderEffect " +
+							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
+							}>
+								<li>
+									Golang
+								</li>
+
+								<li>
+									App Engine
+								</li>
+
+								<li>
+									Firestore
+								</li>
+							</ul>
+						</div>
+
+						<div className="siteInfo containerBGDown">
 							<h3>Features</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
@@ -120,22 +139,9 @@ export default class Introduction extends React.Component {
 								<li>
 									Selectable colour scheme
 								</li>
-							</ul>
-						</div>
 
-						<div className="siteInfo containerBGDown">
-							<h3>Navigation</h3>
-							<ul className={"blinderEffect " +
-							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
-							}>
 								<li>
-									Top Menu Buttons
-								</li>
-								<li>
-									Arrow keys
-								</li>
-								<li>
-									Swiping
+									Persistent comment section
 								</li>
 							</ul>
 						</div>
