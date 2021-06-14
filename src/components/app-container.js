@@ -24,7 +24,7 @@ export default class AppContainer extends React.Component {
 
 		fetch(BASE_URL + "/api/visit", {
 			method: "POST",
-			})
+		})
 	}
 
 	componentWillUnmount() {
