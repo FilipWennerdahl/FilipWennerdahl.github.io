@@ -2,6 +2,7 @@ package api
 
 import (
 	"backend/security"
+	"net"
 
 	"encoding/json"
 	"net/http"
@@ -20,9 +21,15 @@ type Visit struct {
 func RegisterVisit(w http.ResponseWriter, r *http.Request, client *firestore.Client) {
 	ctx := r.Context()
 
-	id, err := security.GetObfuscatedString(r.RemoteAddr)
+	host, _, err := net.SplitHostPort(r.RemoteAddr)
 	if err != nil {
-		http.Error(w, "internal server error", http.StatusInternalServerError)
+		http.Error(w, "internal server error - split", http.StatusInternalServerError)
+		return
+	}
+
+	id, err := security.GetObfuscatedString(host)
+	if err != nil {
+		http.Error(w, "internal server error - ob", http.StatusInternalServerError)
 		return
 	}
 
