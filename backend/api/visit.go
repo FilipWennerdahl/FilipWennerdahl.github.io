@@ -31,7 +31,7 @@ func RegisterVisit(w http.ResponseWriter, r *http.Request, client *firestore.Cli
 		Created: time.Now(),
 	}
 
-	if r.Header.Get("Origin") == "https://filipwennerdahl.github.io/" {
+	if r.Header.Get("Origin") == "https://filipwennerdahl.github.io" {
 		visit := client.Collection("visits").Doc(newVisit.ID)
 
 		_, err = visit.Create(ctx, newVisit)

@@ -43,9 +43,12 @@ func requestHandler(fn Endpoint) http.HandlerFunc {
 
 		defer client.Close()
 
-		w.Header().Set("Access-Control-Allow-Origin", "*")
-		w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE")
-		w.Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type")
+		origin := r.Header.Get("Origin")
+		if origin == "https://filipwennerdahl.github.io" {
+			w.Header().Set("Access-Control-Allow-Origin", origin)
+			w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE")
+			w.Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type")
+		}
 
 		if r.Method == http.MethodOptions {
 			w.WriteHeader(http.StatusNoContent)
