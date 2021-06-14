@@ -32,6 +32,14 @@
 	&-list {
 		justify-content: center;
 		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-left: auto;
+		margin-right: auto;
+
+		h4 {
+			flex-basis: 100%;
+			margin: 1em;
+		}
 	}
 
 	&_content {
@@ -175,6 +183,12 @@
 		&_content {
 			margin: 0 5vw 2em 5vw;
 			background: var(--app-container-bg-down);
+		}
+
+		&-list {
+			h4 {
+				text-align: center;
+			}
 		}
 	}
 

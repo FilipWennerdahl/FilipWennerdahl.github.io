@@ -70,11 +70,9 @@ export default class Introduction extends React.Component {
 						</div>
 					</div>
 
-					<div className="introductionRow introductionRow-site introductionRow-header">
-						<h4>Site info</h4>
-					</div>
-
 					<div className="introductionRow introductionRow-list">
+						<h4>Site info</h4>
+
 						<div className="siteInfo containerBGDown">
 							<h3>Technologies</h3>
 							<ul className={"blinderEffect " +
