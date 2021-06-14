@@ -83,10 +83,6 @@ export default class Introduction extends React.Component {
 								</li>
 
 								<li>
-									Scss
-								</li>
-
-								<li>
 									<a href="https://github.com/elraccoone/react-unity-webgl" target="_blank" rel="noopener noreferrer">
 									React Unity WebGL
 									</a>
