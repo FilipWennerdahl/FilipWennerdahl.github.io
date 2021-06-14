@@ -1,3 +1,4 @@
+import { BASE_URL } from "../helpers/base-url-constant"
 import { KEY } from "../helpers/keycode-constants"
 import { PAGE } from "../helpers/page-constant"
 import { Swipeable } from 'react-swipeable'
@@ -21,7 +22,7 @@ export default class AppContainer extends React.Component {
 	componentDidMount() {
 		document.addEventListener("keyup", this.handleKeyUp);
 
-		fetch("https://filipwennerdahl-github-io.ey.r.appspot.com/api/visit", {
+		fetch(BASE_URL + "/api/visit", {
 			method: "POST",
 			})
 	}

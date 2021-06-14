@@ -1,3 +1,4 @@
+import { BASE_URL } from "../../helpers/base-url-constant";
 import { PAGE } from "../../helpers/page-constant";
 import { SwatchesPicker } from "react-color";
 import Cookies from "universal-cookie";
@@ -52,7 +53,7 @@ export default class Misc extends React.Component {
 	}
 
 	fetchComments() {
-		fetch("https://filipwennerdahl-github-io.ey.r.appspot.com/api/comments?" + new URLSearchParams({
+		fetch(BASE_URL + "/api/comments?" + new URLSearchParams({
 			id: this.state.appUUID
 		}))
 		.then(response => {
@@ -106,7 +107,7 @@ export default class Misc extends React.Component {
 			id: this.state.appUUID
 		}
 
-		fetch("https://filipwennerdahl-github-io.ey.r.appspot.com/api/comments", {
+		fetch(BASE_URL + "/api/comments", {
 			method: "POST",
 			headers: {
 				"Accept": "application/json",
@@ -139,7 +140,7 @@ export default class Misc extends React.Component {
 	}
 
 	deleteComment = () => {
-		fetch("https://filipwennerdahl-github-io.ey.r.appspot.com/api/comments?" + new URLSearchParams({
+		fetch(BASE_URL + "/api/comments?" + new URLSearchParams({
 			id: this.state.appUUID
 		}), {
 			method: "DELETE",

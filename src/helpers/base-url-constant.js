@@ -1,0 +1,1 @@
+export const BASE_URL = "https://filipwennerdahl-github-io.ey.r.appspot.com";
