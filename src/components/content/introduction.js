@@ -74,7 +74,7 @@ export default class Introduction extends React.Component {
 						<h4>Portfolio info</h4>
 
 						<div className="siteInfo containerBGDown">
-							<h3>Frontend Technologies</h3>
+							<h3>Front-end Technologies</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
@@ -109,7 +109,7 @@ export default class Introduction extends React.Component {
 						</div>
 
 						<div className="siteInfo containerBGDown">
-							<h3>Backend Technologies</h3>
+							<h3>Back-end Technologies</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
