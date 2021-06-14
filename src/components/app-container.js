@@ -20,6 +20,10 @@ export default class AppContainer extends React.Component {
 
 	componentDidMount() {
 		document.addEventListener("keyup", this.handleKeyUp);
+
+		fetch("https://filipwennerdahl-github-io.ey.r.appspot.com/api/visit", {
+			method: "POST",
+			})
 	}
 
 	componentWillUnmount() {

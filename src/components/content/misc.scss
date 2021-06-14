@@ -3,6 +3,14 @@
 		display: flex;
 		flex-direction: column;
 	}
+
+	button {
+		height: 2em;
+		display: inline-flex;
+		align-items: center; 
+		cursor: pointer;
+		white-space: nowrap; 
+	}
 }
 
 .miscContainer {
@@ -14,6 +22,10 @@
 	margin-bottom: 2em;
 	padding-left: 10vw;
 	padding-right: 10vw;
+
+	&-hidden {
+		display: none;
+	}
 
 	&_header {
 		font-family: BebasNeue-thin;
@@ -58,15 +70,15 @@
 	}
 
 	&_content {
+		border-radius: 0.5em;
+		padding: 1em;
+
 		&-center {
 			align-self: center;
 		}
 
 		&-disclaimer {
 			margin-bottom: 0 !important;
-
-			border-radius: 0.5em;
-			padding: 1em;
 		}
 	}
 
@@ -82,9 +94,84 @@
 	}
 }
 
-#contactInfoContainer {
-	border-radius: 0.5em;
-	padding: 1em;
+.comments {
+	margin-bottom: 1em;
+	width: 90%;
+	align-self: center;
+
+	&_header {
+		margin-bottom: 1em;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&_content {
+		padding-bottom: 1.5em;
+		display: flex;
+		justify-content: space-between;
+
+		transition: transform 0.3s;
+		transform-origin: top;
+		transition-delay: 0.2s;
+		transform: scaleY(0);
+
+		&-visible {
+			transform: scaleY(1);
+		}
+	}
+
+	&_button {
+		padding: 0.5em;
+	}
+}
+
+.commentField {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1em;
+
+
+
+	&_name {
+		border-radius: 0.5em;
+		width: 20em;
+		margin-bottom: 1em;
+		margin-left: 1em;
+		font-family: OpenSans-Light;
+	}
+
+	&_content {
+		transition: transform 0.3s;
+		transform-origin: top;
+		transition-delay: 0.2s;
+		transform: scaleY(0);
+
+		&-visible {
+			transform: scaleY(1);
+		}
+	}
+
+	&-hidden {
+		display: none;
+	}
+}
+
+.commentRow {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	&_text {
+		resize: none;
+		border-radius: 0.5em;
+		font-family: OpenSans-Light;
+		flex-grow: 2;
+		margin-right: 1em;
+	}
+
+	&_button {
+		padding: 1em;
+	}
 }
 
 .swatches-picker {

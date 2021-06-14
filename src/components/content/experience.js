@@ -93,13 +93,13 @@ export default class Experience extends React.Component {
 			return(
 				<div key={employment.key} className={`experience_content experienceSection experience_content-${index % 2 === 0 ? "left" : "right"}`}>
 					<div className="experienceSection_header">
-						<div>
+						<h5>
 							{employment.location}
-						</div>
+						</h5>
 					
-						<div>
+						<h5>
 							{employment.date}
-						</div>
+						</h5>
 					</div>
 
 					<div className="experienceSection_content containerBGDown">
@@ -117,13 +117,13 @@ export default class Experience extends React.Component {
 			return(
 				<div key={education.key} className={`experience_content experienceSection experience_content-${index % educationsIndexing === 0 ? "left" : "right"}`}>
 					<div className="experienceSection_header">
-						<div>
+						<h5>
 							{education.location}
-						</div>
+						</h5>
 					
-						<div>
+						<h5>
 							{education.date}
-						</div>
+						</h5>
 					</div>
 
 					<div className="experienceSection_content containerBGDown">
@@ -141,13 +141,13 @@ export default class Experience extends React.Component {
 			return(
 				<div key={project.key} className={`experience_content experienceSection experience_content-${index % projectsIndexing === 0 ? "left" : "right"}`}>
 					<div className="experienceSection_header">
-						<div>
+						<h5>
 							{project.location}
-						</div>
+						</h5>
 					
-						<div>
+						<h5>
 							{project.date}
-						</div>
+						</h5>
 					</div>
 
 					<div className="experienceSection_content containerBGDown">
