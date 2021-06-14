@@ -76,7 +76,7 @@ const projects = [
 		[
 			{
 				key: Math.random(),
-				paragraph: "This digial portfolio/cv was an experiment by me to take on React, both to see it's potential but also to expand my toolbox."
+				paragraph: "This portfolio was an experiment by me to take on React, both to see it's potential but also to expand my toolbox. The backend is built using GO and is hosted on GCP using App Engine and Firestore."
 			},
 			{
 				key: Math.random(),
