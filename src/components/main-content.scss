@@ -17,7 +17,7 @@
 }
 
 .contentContainer {
-	transition: left 0.3s ease-in, right 0.3s ease-in, transform 0.3s, opacity 0.2s;
+	transition: left 0.3s ease-in, right 0.3s ease-in, transform 0.3s, opacity 0.2s, visibility 0.4s;
 	position: absolute;
 
 	&-current {
@@ -25,24 +25,27 @@
 		right: 0;
 		transform: scaleX(1);
 		opacity: 1;
+		visibility: visible;
 	}
 
 	&-left {
-		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s, opacity 0.2s;
+		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s, opacity 0.2s, visibility 0;
 		left: -15vw;
 		right: 15vw;
 		transform: scaleX(0);
 		transform-origin: left;
 		opacity: 0;
+		visibility: hidden;
 	}
 
 	&-right {
-		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s, opacity 0.2s;
+		transition: left 0.3s ease-out, right 0.3s ease-out, transform 0.3s, opacity 0.2s, visibility 0;
 		left: 15vw;
 		right: -15vw;
 		transform: scaleX(0);
 		transform-origin: right;
 		opacity: 0;
+		visibility: hidden;
 	}
 
 	&-wasLeft {
