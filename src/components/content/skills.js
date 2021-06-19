@@ -63,7 +63,7 @@ const languages = [
 	new Skill("HTML5", "html5", {fontSize: "2em", marginLeft: "0.3em"}),
 	new Skill("CSS", "css3", true),
 	new Skill("Java", JavaLogo, false),
-	new Skill("GoLang", GoLogo, false),
+	new Skill("Golang", GoLogo, false),
 	new Skill("C#", CSharpLogo, false),
 	new Skill("SQL", SqlLogo, false),
 	new Skill("C++", CPlusPlusLogo, false),

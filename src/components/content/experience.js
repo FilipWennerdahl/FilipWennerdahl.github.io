@@ -76,11 +76,11 @@ const projects = [
 		[
 			{
 				key: Math.random(),
-				paragraph: "This portfolio was an experiment by me to take on React, both to see it's potential but also to expand my toolbox. The backend is built using GO and is hosted on GCP using App Engine and Firestore."
+				paragraph: "This portfolio was an experiment by me to take on React, both to see it's potential but also to expand my toolbox. The backend is built using Golang and is hosted on GCP using App Engine and Firestore."
 			},
 			{
 				key: Math.random(),
-				paragraph: "If you are curious and want to check out the source you can find the repository on my GitHub profile. I try to keep it updated when I feel there is something new to add or when I get a spark of inspiration."
+				paragraph: "If you are curious and want to check out the source you can find <a href='https://github.com/FilipWennerdahl/FilipWennerdahl.github.io' target='_blank'>the repository on my GitHub profile</a>. I try to keep it updated when I feel there is something new to add or when I get a spark of inspiration."
 			}
 		]
 	)
@@ -153,7 +153,7 @@ export default class Experience extends React.Component {
 					<div className="experienceSection_content containerBGDown">
 						<div className={"textContainer "  + (this.props.currentPage === PAGE.EXPERIENCE ? "textContainer-visible" : "")}>
 							{project.description.map((descriptionItem) =>
-								<p key={descriptionItem.key}>{descriptionItem.paragraph}</p>
+								<p key={descriptionItem.key} dangerouslySetInnerHTML={{__html: descriptionItem.paragraph}}></p>
 							)}
 						</div>
 					</div>
