@@ -71,8 +71,8 @@ const educationsIndexing = employments.length % 2 === 0 ? 1 : 0;
 
 const projects = [
 	new Exp(
+		"Portfolio, React",
 		"Jul 2020 - Ongoing project",
-		"Digital portfolio/cv, react",
 		[
 			{
 				key: Math.random(),
