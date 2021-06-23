@@ -29,24 +29,26 @@ export default class Introduction extends React.Component {
 
 				<div className="introduction_content">
 					<div className="introductionRow introductionRow-info introductionRow-mb">
-						<div className="introductionRow_content containerBGRight">
-							<div className={"introductionText " + 
-							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-							}>
-								<h3>Hi, I'm Filip.</h3>
-							</div>
+						<div className="introductionRow_intro">
+							<h4>Hi, I'm Filip!</h4>
 
-							<div className={"introductionText " + 
-							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-							}>I'm a full stack developer and you've found my portfoilo.</div>
-							
-							<div className={"introductionText " + 
-							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-							}>Here you can find my skills, experiences and some of the game projects I've worked on.</div>
-							
-							<div className={"introductionText " + 
-							(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-							}>Enjoy!</div>
+							<div className="introductionRow_content containerBGRight">
+								<div className={"introductionText " + 
+								(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
+								}>I'm a full stack developer and you've found my portfoilo.</div>
+								
+								<div className={"introductionText " + 
+								(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
+								}>Here you can find my skills, experiences and some of the game projects I've worked on.</div>
+
+								<div className={"introductionText " + 
+								(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
+								}>You may also notice that I tried to let love for nature shine through.</div>
+								
+								<div className={"introductionText " + 
+								(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
+								}>Enjoy!</div>
+							</div>
 						</div>
 
 						<div className="introductionRow_picture">
