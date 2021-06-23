@@ -27,7 +27,7 @@ export default class Misc extends React.Component {
 		let appThemeCookie = cookies.get("app-theme");
 
 		this.state={
-			currentColour: appThemeCookie ? appThemeCookie : { r: 100, g: 181, b: 246, hex: "#64b5f6" },
+			currentColour: appThemeCookie ? appThemeCookie : { r: 0, g: 121, b: 107, hex: "#00796b" },
 			appUUID: uuidCookie ? uuidCookie : this.generateUUID(),
 			newCommentAuthor: "",
 			newComment: "",
