@@ -22,7 +22,10 @@ class PortfolioInfo {
 }
 
 const introHeader = "Hi, I'm Filip!";
-const portfolioInfoHeader = "Portfolio Info"
+const portfolioInfoHeader = "Portfolio Info";
+const frontEndHeader = "Front-end Technologies";
+const backEndHeader = "Back-end Technologies";
+const featuresHeader = "Features";
 
 const introParagraphs = [
 	new IntroParagraph("I'm a full stack developer and you've found my portfoilo."),
@@ -174,7 +177,10 @@ export default class Introduction extends React.Component {
 						</h4>
 
 						<div className="siteInfo containerBGDown">
-							<h3>Front-end Technologies</h3>
+							<h3>
+								{frontEndHeader}
+							</h3>
+
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
@@ -183,7 +189,10 @@ export default class Introduction extends React.Component {
 						</div>
 
 						<div className="siteInfo containerBGDown">
-							<h3>Back-end Technologies</h3>
+							<h3>
+								{backEndHeader}
+							</h3>
+
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
@@ -192,7 +201,10 @@ export default class Introduction extends React.Component {
 						</div>
 
 						<div className="siteInfo containerBGDown">
-							<h3>Features</h3>
+							<h3>
+								{featuresHeader}
+							</h3>
+
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
