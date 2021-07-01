@@ -6,6 +6,51 @@ import React from "react";
 
 import "./introduction.scss";
 
+class IntroParagraph {
+	constructor(text) {
+		this.key = Math.random();
+		this.text = text
+	}
+}
+
+class PortfolioInfo {
+	constructor(title, url) {
+		this.key = Math.random();
+		this.title = title
+		this.url = url
+	}
+}
+
+const introHeader = "Hi, I'm Filip!";
+const portfolioInfoHeader = "Portfolio Info"
+
+const introParagraphs = [
+	new IntroParagraph("I'm a full stack developer and you've found my portfoilo."),
+	new IntroParagraph("Here you can find my skills, experiences and some of the game projects I've worked on."),
+	new IntroParagraph("You may also notice that I tried to let my love for nature shine through."),
+	new IntroParagraph("Enjoy!")
+]
+
+const frontEndTechnologiesList = [
+	new PortfolioInfo("React"),
+	new PortfolioInfo("React Unity WebGL", "https://github.com/elraccoone/react-unity-webgl"),
+	new PortfolioInfo("React Color", "https://casesandberg.github.io/react-color/"),
+	new PortfolioInfo("Universal Cookie", "https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie"),
+	new PortfolioInfo("React Swipeable", "https://github.com/FormidableLabs/react-swipeable")
+]
+
+const backEndTechnologiesList = [
+	new PortfolioInfo("Golang"),
+	new PortfolioInfo("App Engine"),
+	new PortfolioInfo("Firestore")
+]
+
+const featuresList = [
+	new PortfolioInfo("Responsive design"),
+	new PortfolioInfo("Selectable colour scheme"),
+	new PortfolioInfo("Persistent comment section")
+]
+
 export default class Introduction extends React.Component {
 	constructor(props) {
 		super(props);
@@ -21,6 +66,69 @@ export default class Introduction extends React.Component {
 	}
 
 	render() {
+		const intro = introParagraphs.map((paragraph, index) => {
+			return(
+				<div key={paragraph.key} className={"introductionText " + 
+				(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")}>
+					{paragraph.text}
+				</div>
+			);
+		});
+
+		const frontEndTech = frontEndTechnologiesList.map((tech, index) => {
+			return(
+				<li>
+					{!tech.url &&
+						<div>
+							{tech.title}
+						</div>
+					}
+
+					{tech.url &&
+						<a href={tech.url} target="_blank" rel="noopener noreferrer">
+							{tech.title}
+						</a>
+					}
+				</li>
+			);
+		});
+
+		const backEndTech = backEndTechnologiesList.map((tech, index) => {
+			return(
+				<li>
+					{!tech.url &&
+						<div>
+							{tech.title}
+						</div>
+					}
+
+					{tech.url &&
+						<a href={tech.url} target="_blank" rel="noopener noreferrer">
+							{tech.title}
+						</a>
+					}
+				</li>
+			);
+		});
+
+		const features = featuresList.map((tech, index) => {
+			return(
+				<li>
+					{!tech.url &&
+						<div>
+							{tech.title}
+						</div>
+					}
+
+					{tech.url &&
+						<a href={tech.url} target="_blank" rel="noopener noreferrer">
+							{tech.title}
+						</a>
+					}
+				</li>
+			);
+		});
+
 		return (
 			<div className="introduction content">
 				<div className="leftFlex">
@@ -30,24 +138,12 @@ export default class Introduction extends React.Component {
 				<div className="introduction_content">
 					<div className="introductionRow introductionRow-info introductionRow-mb">
 						<div className="introductionRow_intro">
-							<h4>Hi, I'm Filip!</h4>
+							<h4>
+								{introHeader}
+							</h4>
 
 							<div className="introductionRow_content containerBGRight">
-								<div className={"introductionText " + 
-								(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-								}>I'm a full stack developer and you've found my portfoilo.</div>
-								
-								<div className={"introductionText " + 
-								(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-								}>Here you can find my skills, experiences and some of the game projects I've worked on.</div>
-
-								<div className={"introductionText " + 
-								(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-								}>You may also notice that I tried to let my love for nature shine through.</div>
-								
-								<div className={"introductionText " + 
-								(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")
-								}>Enjoy!</div>
+								{intro}
 							</div>
 						</div>
 
@@ -73,40 +169,16 @@ export default class Introduction extends React.Component {
 					</div>
 
 					<div className="introductionRow introductionRow-list">
-						<h4>Portfolio info</h4>
+						<h4>
+							{portfolioInfoHeader}
+						</h4>
 
 						<div className="siteInfo containerBGDown">
 							<h3>Front-end Technologies</h3>
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
-								<li>
-									React
-								</li>
-
-								<li>
-									<a href="https://github.com/elraccoone/react-unity-webgl" target="_blank" rel="noopener noreferrer">
-									React Unity WebGL
-									</a>
-								</li>
-
-								<li>
-									<a href="https://casesandberg.github.io/react-color/" target="_blank" rel="noopener noreferrer">
-										React Color
-									</a>
-								</li>
-
-								<li>
-									<a href="https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie" target="_blank" rel="noopener noreferrer">
-										Universal Cookie
-									</a>
-								</li>
-
-								<li>
-									<a href="https://github.com/FormidableLabs/react-swipeable" target="_blank" rel="noopener noreferrer">
-										React Swipeable
-									</a>
-								</li>
+								{frontEndTech}
 							</ul>
 						</div>
 
@@ -115,17 +187,7 @@ export default class Introduction extends React.Component {
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
-								<li>
-									Golang
-								</li>
-
-								<li>
-									App Engine
-								</li>
-
-								<li>
-									Firestore
-								</li>
+								{backEndTech}
 							</ul>
 						</div>
 
@@ -134,17 +196,7 @@ export default class Introduction extends React.Component {
 							<ul className={"blinderEffect " +
 							(this.props.currentPage === PAGE.INTRODUCTION ? "blinderEffect-active" : "")
 							}>
-								<li>
-									Responsive design
-								</li>
-
-								<li>
-									Selectable colour scheme
-								</li>
-
-								<li>
-									Persistent comment section
-								</li>
+								{features}
 							</ul>
 						</div>
 					</div>
