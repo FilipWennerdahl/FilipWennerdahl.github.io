@@ -212,7 +212,7 @@ export default class Misc extends React.Component {
 							(this.props.currentPage === PAGE.MISC ? " commentField_content-visible" : "")
 							}>
 								<div>
-									Author:<input type="text" maxLength="40" placeholder="Name" className="commentField_name"
+									Name:<input type="text" maxLength="40" className="commentField_name"
 									value={this.state.newCommentAuthor}
 									onChange={event => {
 										this.setState({
@@ -232,7 +232,7 @@ export default class Misc extends React.Component {
 									}}></textarea>
 
 									<button className="commentRow_button" onClick={this.postComment} disabled={!this.state.newComment || !this.state.newCommentAuthor}>
-										Send Comment
+										Post Comment
 									</button>
 								</div>
 							</div>
