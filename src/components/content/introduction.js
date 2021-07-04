@@ -71,7 +71,7 @@ export default class Introduction extends React.Component {
 	}
 
 	render() {
-		const intro = introParagraphs.map((paragraph, index) => {
+		const intro = introParagraphs.map((paragraph) => {
 			return(
 				<div key={paragraph.key} className={"introductionText " + 
 				(this.props.currentPage === PAGE.INTRODUCTION ? "introductionText-visible" : "")}>
@@ -80,9 +80,9 @@ export default class Introduction extends React.Component {
 			);
 		});
 
-		const frontEndTech = frontEndTechnologiesList.map((tech, index) => {
+		const frontEndTech = frontEndTechnologiesList.map((tech) => {
 			return(
-				<li>
+				<li key={tech.key}>
 					{!tech.url &&
 						<div>
 							{tech.title}
@@ -98,9 +98,9 @@ export default class Introduction extends React.Component {
 			);
 		});
 
-		const backEndTech = backEndTechnologiesList.map((tech, index) => {
+		const backEndTech = backEndTechnologiesList.map((tech) => {
 			return(
-				<li>
+				<li key={tech.key}>
 					{!tech.url &&
 						<div>
 							{tech.title}
@@ -116,9 +116,9 @@ export default class Introduction extends React.Component {
 			);
 		});
 
-		const features = featuresList.map((tech, index) => {
+		const features = featuresList.map((tech) => {
 			return(
-				<li>
+				<li key={tech.key}>
 					{!tech.url &&
 						<div>
 							{tech.title}
