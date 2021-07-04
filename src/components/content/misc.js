@@ -16,8 +16,27 @@ class Comment {
 	}
 }
 
+const pageHeader = "Contact & Settings";
+
 const cookies = new Cookies();
+
+const commentsHeader = "Comments";
+const nameLabel = "Name:";
+const btnPostComment = "Post Comment";
+const btnDeleteComment = "Delete Comment";
 let comments = [];
+
+const contactInfoHeader = "Contact Information";
+const contactDisclaimer = "Currently I'm mainly interested in fullstack work but I'd also like to expand my app development skills. I'm NOT interested in test automation or pure java development at this moment.";
+const emailLabel = "Email:";
+const emailAddress = "filipwennerdahl@hotmail.com";
+const linkedInLabel = "LinkedIn:";
+const linkedInAddress = "https://www.linkedin.com/in/filip-wennerdahl/";
+const gitHubLabel = "GitHub:";
+const gitHubAddress = "https://github.com/filipwennerdahl";
+
+const colourThemeHeader = "Colour Theme Picker";
+const colourThemeDisclaimer = "In choosing a colour you accept to store a cookie with the app theme information.";
 
 export default class Misc extends React.Component {
 	constructor(props) {
@@ -180,7 +199,7 @@ export default class Misc extends React.Component {
 						<div>
 							{comment.owner &&
 								<button className="comments_button" onClick={this.deleteComment}>
-									Delete Comment
+									{btnDeleteComment}
 								</button>
 							}
 						</div>
@@ -192,7 +211,9 @@ export default class Misc extends React.Component {
 		return(
 			<div className="misc content">
 				<div className="leftFlex">
-					<h1 className="content_header">Contact and settings</h1>
+					<h1 className="content_header">
+						{pageHeader}
+					</h1>
 				</div>
 
 				<div className="misc_content">
@@ -200,7 +221,9 @@ export default class Misc extends React.Component {
 						(!this.state.commentsLoaded ? " miscContainer-hidden" : "")
 						}>
 						<div className="miscContainer_header">
-							<h4>Comments</h4>
+							<h4>
+								{commentsHeader}
+							</h4>
 						</div>
 
 						{commentItems}
@@ -212,7 +235,7 @@ export default class Misc extends React.Component {
 							(this.props.currentPage === PAGE.MISC ? " commentField_content-visible" : "")
 							}>
 								<div>
-									Name:<input type="text" maxLength="40" className="commentField_name"
+									{nameLabel}<input type="text" maxLength="40" className="commentField_name"
 									value={this.state.newCommentAuthor}
 									onChange={event => {
 										this.setState({
@@ -232,7 +255,7 @@ export default class Misc extends React.Component {
 									}}></textarea>
 
 									<button className="commentRow_button" onClick={this.postComment} disabled={!this.state.newComment || !this.state.newCommentAuthor}>
-										Post Comment
+										{btnPostComment}
 									</button>
 								</div>
 							</div>
@@ -241,14 +264,16 @@ export default class Misc extends React.Component {
 
 					<div className="miscContainer">
 						<div className="miscContainer_header">
-							<h4>Contact Information</h4>
+							<h4>
+								{contactInfoHeader}
+							</h4>
 						</div>
 
 						<div className="miscContainer_content containerBGDown">
 							<div className={"miscContainer_text " + 
 							(this.props.currentPage === PAGE.MISC ? "miscContainer_text-visible" : "")
 							}>
-								Currently I'm mainly interested in full stack work but I'd also like to expand my app development skills. I am NOT interested in test automation or pure java development at this moment.
+								{contactDisclaimer}
 							</div>
 
 							<div className={"miscContainer_contactInfo " +
@@ -256,10 +281,10 @@ export default class Misc extends React.Component {
 							}>
 								<div>
 									<i className="fa fa-envelope-o" aria-hidden="true"></i>
-									Email:
+									{emailLabel}
 								</div>
 
-								<a href="mailto:filipwennerdahl@hotmail.com">filipwennerdahl@hotmail.com</a>
+								<a href={"mailto:" + emailAddress}>{emailAddress}</a>
 							</div>
 
 							<div className={"miscContainer_contactInfo " +
@@ -267,10 +292,10 @@ export default class Misc extends React.Component {
 							}>
 								<div>
 									<i className="fa fa-linkedin-square" aria-hidden="true"></i>
-									LinkedIn:
+									{linkedInLabel}
 								</div>
 
-								<a href="https://www.linkedin.com/in/filip-wennerdahl/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/filip-wennerdahl/</a>
+								<a href={linkedInAddress} target="_blank" rel="noopener noreferrer">{linkedInAddress}</a>
 							</div>
 
 							<div className={"miscContainer_contactInfo " +
@@ -278,21 +303,23 @@ export default class Misc extends React.Component {
 							}>
 								<div>
 									<i className="fa fa-github-square" aria-hidden="true"></i>
-									GitHub:
+									{gitHubLabel}
 								</div>
 
-								<a href="https://github.com/filipwennerdahl" target="_blank" rel="noopener noreferrer">https://github.com/filipwennerdahl</a>
+								<a href={gitHubAddress} target="_blank" rel="noopener noreferrer">{gitHubAddress}</a>
 							</div>
 						</div>
 					</div>
 
 					<div className="miscContainer">
 						<div className="miscContainer_header">
-							<h4>Colour Theme Picker</h4>
+							<h4>
+								{colourThemeHeader}
+							</h4>
 						</div>
 
 						<div className="miscContainer_content miscContainer_content-center miscContainer_content-disclaimer containerBGDown">
-								In choosing a colour you accept to store a cookie with the app theme information.
+							{colourThemeDisclaimer}
 						</div>
 
 						<SwatchesPicker 
