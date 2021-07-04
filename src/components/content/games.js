@@ -110,7 +110,7 @@ export default class Games extends React.Component {
 					<div className={"gameText " +
 					(this.props.currentPage === PAGE.GAMES ? "gameText-visible" : "")
 					}>
-						Unfourtantly due to how WebGL works, this in browser version of the game is not supported on mobile devices If you have an Android device you can <a href="https://rawgit.com/FilipWennerdahl/MobileSpaceGame/master/Game-Android/MobileSpaceGame.apk" target="_blank" rel="noopener noreferrer">download the game here (APK).</a>
+						Unfourtantly due to WebGL limitations, this in browser version of the game is not supported on mobile devices If you have an Android device you can <a href="https://rawgit.com/FilipWennerdahl/MobileSpaceGame/master/Game-Android/MobileSpaceGame.apk" target="_blank" rel="noopener noreferrer">download the game here (APK).</a>
 					</div>
 				</div>
 
@@ -144,7 +144,7 @@ export default class Games extends React.Component {
 					<div className={"gameText " +
 					(this.props.currentPage === PAGE.GAMES ? "gameText-visible" : "")
 					}>
-						Unfourtantly due to how WebGL works, this in browser version of the game is not supported on mobile devices. If you have an Android device you can <a href="https://rawgit.com/FilipWennerdahl/TowerOfHanoi/master/Game-Android/TowerOfHanoi.apk" target="_blank" rel="noopener noreferrer">download the game here (APK).</a>
+						Unfourtantly due to WebGL limitations, this in browser version of the game is not supported on mobile devices. If you have an Android device you can <a href="https://rawgit.com/FilipWennerdahl/TowerOfHanoi/master/Game-Android/TowerOfHanoi.apk" target="_blank" rel="noopener noreferrer">download the game here (APK).</a>
 					</div>
 				</div>
 
