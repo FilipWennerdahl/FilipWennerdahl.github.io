@@ -33,15 +33,23 @@ class Skill {
 	}
 }
 
-const platforms = [
-	new Skill("Windows", "windows", true, {fontSize: "1.4em"}),
-	new Skill("macOS", "apple", true),
-	new Skill("Chromebook", "chrome", true),
-	new Skill("iOS", "apple", true),
-	new Skill("Android", "android", true),
-	new Skill("Linux", "linux", true)
+const languagesHeader = "Languages";
+const languagesDescription = "During my time as a developer I've used several different languages both professionally and in hobby projects.";
+const languages = [
+	new Skill("JavaScript", JavaScriptLogo, false),
+	new Skill("HTML5", "html5", {fontSize: "2em", marginLeft: "0.3em"}),
+	new Skill("CSS", "css3", true),
+	new Skill("Java", JavaLogo, false),
+	new Skill("Golang", GoLogo, false),
+	new Skill("C#", CSharpLogo, false),
+	new Skill("SQL", SqlLogo, false),
+	new Skill("C++", CPlusPlusLogo, false),
+	new Skill("Objective-C", "apple", true),
+	new Skill("TypeScript", TSLogo, false, {height: "1.4em"}),
 ]
 
+const technologiesHeader = "Technologies";
+const technologiesDescription = "Building websites, applications and games requires a wide array tools and frameworks.";
 const technologies = [
 	new Skill("AngularJS", AngularLogo, false),
 	new Skill("Git", GitLogo, false),
@@ -58,19 +66,16 @@ const technologies = [
 	new Skill("Unity", UnityLogo, false)
 ]
 
-const languages = [
-	new Skill("JavaScript", JavaScriptLogo, false),
-	new Skill("HTML5", "html5", {fontSize: "2em", marginLeft: "0.3em"}),
-	new Skill("CSS", "css3", true),
-	new Skill("Java", JavaLogo, false),
-	new Skill("Golang", GoLogo, false),
-	new Skill("C#", CSharpLogo, false),
-	new Skill("SQL", SqlLogo, false),
-	new Skill("C++", CPlusPlusLogo, false),
-	new Skill("Objective-C", "apple", true),
-	new Skill("TypeScript", TSLogo, false, {height: "1.4em"}),
+const platformsHeader = "Platforms";
+const platformsDescription = "My expeirence of developing cross platform applications and setting up CI has exposed me to most of the major platforms.";
+const platforms = [
+	new Skill("Windows", "windows", true, {fontSize: "1.4em"}),
+	new Skill("macOS", "apple", true),
+	new Skill("Chromebook", "chrome", true),
+	new Skill("iOS", "apple", true),
+	new Skill("Android", "android", true),
+	new Skill("Linux", "linux", true)
 ]
-
 
 export default class Skills extends React.Component {
 	render() {
@@ -138,13 +143,13 @@ export default class Skills extends React.Component {
 					<div className="skillType_header">
 						<h3>
 							<i className="fa fa-code" aria-hidden="true"></i>
-							Languages
+							{languagesHeader}
 						</h3>
 					</div>
 
 					<div className="skillList">
 						<div className="skillList_description">
-							During my time as a developer I've used several different languages both professionally and in hobby projects.
+							{languagesDescription}
 						</div>
 
 						<div className={"skillList_container bold blinderEffect " +
@@ -158,13 +163,13 @@ export default class Skills extends React.Component {
 					<div className="skillType_header">
 						<h3>
 							<i className="fa fa-microchip" aria-hidden="true"></i>
-							Technologies
+							{technologiesHeader}
 						</h3>
 					</div>
 
 					<div className="skillList">
 						<div className="skillList_description skillList_description-right">
-								Building websites, applications and games requires a wide array tools and frameworks.  
+								{technologiesDescription}
 						</div>
 
 						<div className={"skillList_container bold blinderEffect " +
@@ -178,13 +183,13 @@ export default class Skills extends React.Component {
 					<div className="skillType_header">
 						<h3>
 							<i className="fa fa-laptop" aria-hidden="true"></i>
-							Platforms
+							{platformsHeader}
 						</h3>
 					</div>
 
 					<div className="skillList">
 						<div className="skillList_description">
-								My expeirence of developing cross platform applications and setting up CI has exposed me to most of the major platforms. 
+								{platformsDescription}
 						</div>
 
 						<div className={"skillList_container bold blinderEffect " +
