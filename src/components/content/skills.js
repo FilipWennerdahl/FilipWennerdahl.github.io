@@ -33,6 +33,8 @@ class Skill {
 	}
 }
 
+const pageHeader = "Skills";
+
 const languagesHeader = "Languages";
 const languagesDescription = "During my time as a developer I've used several different languages both professionally and in hobby projects.";
 const languages = [
@@ -136,7 +138,9 @@ export default class Skills extends React.Component {
 		return (
 			<div className="skills content">
 				<div className="leftFlex">
-					<h1 className="content_header">Skills</h1>
+					<h1 className="content_header">
+						{pageHeader}
+					</h1>
 				</div>
 
 				<div className="skillType">

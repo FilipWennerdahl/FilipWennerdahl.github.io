@@ -21,12 +21,9 @@ class PortfolioInfo {
 	}
 }
 
-const introHeader = "Hi, I'm Filip!";
-const portfolioInfoHeader = "Portfolio Info";
-const frontEndHeader = "Front-end Technologies";
-const backEndHeader = "Back-end Technologies";
-const featuresHeader = "Features";
+const pageHeader = "Introduction";
 
+const introHeader = "Hi, I'm Filip!";
 const introParagraphs = [
 	new IntroParagraph("I'm a full stack developer and you've found my portfoilo."),
 	new IntroParagraph("Here you can find my skills, experiences and some of the game projects I've worked on."),
@@ -34,6 +31,9 @@ const introParagraphs = [
 	new IntroParagraph("Enjoy!")
 ]
 
+const portfolioInfoHeader = "Portfolio Info";
+
+const frontEndHeader = "Front-end Technologies";
 const frontEndTechnologiesList = [
 	new PortfolioInfo("React"),
 	new PortfolioInfo("React Unity WebGL", "https://github.com/elraccoone/react-unity-webgl"),
@@ -42,12 +42,14 @@ const frontEndTechnologiesList = [
 	new PortfolioInfo("React Swipeable", "https://github.com/FormidableLabs/react-swipeable")
 ]
 
+const backEndHeader = "Back-end Technologies";
 const backEndTechnologiesList = [
 	new PortfolioInfo("Golang"),
 	new PortfolioInfo("App Engine"),
 	new PortfolioInfo("Firestore")
 ]
 
+const featuresHeader = "Features";
 const featuresList = [
 	new PortfolioInfo("Responsive design"),
 	new PortfolioInfo("Selectable colour scheme"),
@@ -135,7 +137,9 @@ export default class Introduction extends React.Component {
 		return (
 			<div className="introduction content">
 				<div className="leftFlex">
-					<h1 className="content_header">Introduction</h1>
+					<h1 className="content_header">
+						{pageHeader}
+					</h1>
 				</div>
 
 				<div className="introduction_content">

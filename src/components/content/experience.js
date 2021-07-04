@@ -12,6 +12,9 @@ class Exp {
 	}
 }
 
+const pageHeader = "Experience";
+
+const employmentsHeader = "Employment";
 const employments = [
 	new Exp(
 		"DigiExam, Stockholm",
@@ -47,6 +50,7 @@ const employments = [
 	)
 ];
 
+const educationsHeader = "Education";
 const educations = [
 	new Exp(
 		"Bachelor’s degree in Computer Science (180p), Stockholm University",
@@ -69,6 +73,7 @@ const educations = [
 ];
 const educationsIndexing = employments.length % 2 === 0 ? 1 : 0;
 
+const projectsHeader = "Projects";
 const projects = [
 	new Exp(
 		"Portfolio, React",
@@ -164,23 +169,31 @@ export default class Experience extends React.Component {
 		return(
 			<div className="experience content">
 				<div className="leftFlex">
-					<h1 className="content_header">Experience</h1>
+					<h1 className="content_header">
+						{pageHeader}
+					</h1>
 				</div>
 
 				<div className="experience_content experience_content-left">
-					<h4>Employment</h4>
+					<h4>
+						{employmentsHeader}
+					</h4>
 				</div>
 
 				{employtmentItems}
 
 				<div className={`experience_content  experience_content-${ educationsIndexing === 1 ? "left" : "right"}`}>
-					<h4>Education</h4>
+					<h4>
+						{educationsHeader}
+					</h4>
 				</div>
 
 				{educationItems}
 
 				<div className={`experience_content  experience_content-${ projectsIndexing === 1 ? "left" : "right"}`}>
-					<h4>Projects</h4>
+					<h4>
+						{projectsHeader}
+					</h4>
 				</div>
 
 				{projectItems}
